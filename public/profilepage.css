@@ -1,0 +1,452 @@
+/* PROFILE */
+
+.body-overlay1{
+  background-color: rgba(38, 91, 116, 0.445);
+  background-size: cover;
+  padding-top: 37px;
+}
+
+/* .body-overlay-profile {
+  padding: 0;
+}  */
+
+.logo1 {
+  width: 186px;
+  margin-left: -10px;
+}
+.sidenav a {
+  padding: 2px 2px 6px 10px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #e9e0d4;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+} */
+
+.main-profile-container{
+  display: flex;
+}
+
+.searchBar {
+  margin-left: 260px;
+  text-align: center;
+  width: 57%;
+  transform: translateY(-20px);
+  margin-top: 50px;
+  /* border-radius: 3px 3px; */
+}
+
+.searchBar input {
+  /*padding: 1px 20px;*/
+  width: 320px;
+  height: 25px;
+  font-size:14px;
+}
+
+.button-search {
+  color: green;
+  /*border: 2px solid green; */
+  border-width: 1px;
+  border-style: solid;
+  border-color: green;
+  /*box-shadow: x y blur-size size color */
+  /* box-shadow: 0 1px 1px white; */
+  border-radius: 3px 3px;
+}
+
+.statusWrapper {
+  position: fixed;
+  width: 185px;
+  left: 40px;
+  top: 45px;
+  background-color: rgba(0, 172, 120, 0.637);
+  border-radius: 0 0 5px 5px;
+}
+
+#timeStamp {
+  /* display: block; */
+  /* position: fixed; */
+  width: 100%;
+  padding: 3px 0;
+  font-size:14px;
+}
+.profile-user-id {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 2px;
+  color: #ffffff;
+}
+.profile-status{
+  text-align:   center;
+}
+.pro-tools{
+  float: right;
+  margin-right: 420px;
+  background-color: rgb(119, 201, 191);
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 1px 1px 4px 1px rgb(164, 176, 192);
+  font-size: 14px;
+}
+
+.profile-contact-list {
+  background-color: rgba(245, 240, 240, 0.953);
+}
+.profile-services-grid {
+  display: flex;
+  background-color: rgba(245, 240, 240, 0.954);
+  flex-wrap: wrap;
+  box-shadow: 1px 1px 4px 3px rgb(164, 176, 192);
+  padding: 20px 4% 0;
+}
+
+.a-text {
+  text-decoration: none;
+  color: rgb(0, 179, 164);
+}
+.profile-text-block2 img,
+.profile-text-block-3 img {
+  width: 80%;
+}
+
+.twoBySix p.list-image {
+  height: 210px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  margin-left: 5px;
+}
+
+.twoBySix p.list-image img {
+  width: 250px;
+  min-height: 205px;
+  overflow: hidden;
+}
+
+#rightside-title {
+  font-size: 12px;
+  line-height: 23px;
+}
+
+.profile-box{
+  margin-top: 25px;
+  position: fixed;
+  left: 30px;
+  text-align: center;
+}
+
+ .right-side-profileContainer {
+   grid-area: right-area;
+   display: flex;
+   flex-direction: column;
+   /* margin-top: 3em; */
+   text-align: center;
+  box-shadow: 1px 1px 4px 3px rgb(164, 176, 192);
+  background-color: rgb(145, 149, 150);
+  /* background-color: rgb(245, 243, 241); */
+  /* margin-right: 0px; */
+  /* margin-left: 0px; */
+  /* width: 20%; FIx this later */
+}
+
+.right-side-profileContent {
+  max-height: 2240px;
+  overflow-y: scroll;
+  /* margin-left: 15px; */
+}
+
+.profile-text-block3 {
+  background-color: rgb(241, 241, 241);
+  padding: 20px;
+  border-left: solid 3px rgb(187, 200, 216);
+  border-right: solid 3px rgb(187, 200, 216);
+  border-bottom: solid 3px rgb(187, 200, 216);
+}
+
+#debug-recipe-list {
+  font-size: 12px;
+}
+
+.services-grid > div {
+  /* border: 1px solid gray; */
+  margin-bottom: 20px;
+}
+.services-grid > div:nth-child(2n - 1) {
+  background: rgba(255,255,255,0.3);
+}
+
+.left-side-profileContainer {
+  grid-area: left-area;
+  width: 68%;
+  margin-left: 100px;
+  margin-right: 42px;
+}
+
+.twoBySix:nth-of-type(1) {
+  /* background-color: blue; */
+}
+
+.twoBySix:nth-of-type(2) {
+  /* background-color: yellow; */
+}
+
+.twoBySix:nth-of-type(2) {
+  /* background-color: yellow; */
+}
+
+.twoBySix {
+  flex: 50%;
+  text-align: center;
+}
+.oneByFive {
+  flex: 20%;
+  text-align: center;
+}
+.oneByFive img {
+  max-width: 100px;
+}
+
+.oneByFive a,
+.oneByFive p {
+  margin: 0.1em;
+  font-size: 10px;
+  text-decoration: none;
+  color: black;
+  word-break: break-all;
+    overflow-wrap: break-word;
+}
+
+.changePic {
+  font-size: 10px;
+  /* background:rgba(0, 90, 71, 0.486); */
+  background:rgb(91, 156, 148);
+
+}
+
+.removePic {
+  font-size: 10px;
+  /* background:rgba(0, 65, 102, 0.582); */
+  background:rgb(65, 121, 153);
+
+
+}
+
+/* .footer-bottom a{
+ color:rgb(48, 62, 82);
+} */
+
+#profileAvatar{
+  border-radius: 90px;
+  border: 1px;
+  width: 180px;
+  box-shadow: 0px 1px 1px 1px rgb(111, 124, 118);
+  background: white;
+  height:160px;
+}
+#picture-text{
+  text-align: center;
+  font-size: 12px;
+  /* font-weight: bold; */
+  color: rgb(73, 59, 90);
+  background: rgba(254, 254, 255, 0.466);
+
+  border-radius:3px;
+}
+
+#skills-form-container{
+  color: rgb(52, 127, 189);
+}
+
+.choose-block h4 {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.choose-block label {
+  font-size: 12px;
+}
+
+.profile-image-block4 {
+  box-shadow: 0px 1px 1px 1px rgb(111, 124, 118);
+
+}
+
+#text2-container{
+  text-align: center;
+}
+
+img {
+  max-width: 250px;
+}
+
+.profile-text-block1 {
+  text-align: center;
+  /* box-shadow: 0px 1px 1px 1px rgb(111, 124, 118); */
+
+}
+.profile-box button {
+  border: 01px solid rgba(190, 200, 201, 0.281);
+  border-radius: 5px;
+  font-size: 11px;
+  box-shadow: 1px 4px 2px 0px rgb(145, 142, 153);
+  color: white;
+  /* margin-left: -180px; */
+}
+
+.profile-text-block3a {
+  font-size: 14px;
+}
+
+/* Profile contacts container */
+.profile-image-block3 { 
+  box-shadow: 0px 1px 1px 1px rgb(111, 124, 118);
+  /*position: fixed;*/
+  text-align: center;
+  margin-top: 10px;
+  /*margin-left: -205px;*/
+  padding: 5px;
+  /* width: 300px; */
+  background-color: white;
+  font-size: 12px;
+  width: 185px;
+  box-sizing: border-box;
+  margin-top:30px;
+  border-radius: 3px 3px 3px 3px;
+  /*height: 200px;
+  width: 180px;*/
+  height: 50vh;
+  overflow-y: auto;
+  /* Trying to fix scroll issue */
+  position: relative;
+  z-index: 999;
+}
+
+/* Profile contact */
+.profile-text-block2 {
+  border-bottom: 1px solid rgb(174, 205, 226);
+  padding-bottom: 5px;
+  margin-bottom: 7px;
+}
+.profile-text-block2:last-child {
+  border: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+/* #text2-container{
+  background-color:tomato;
+  width: 300px;
+} */
+
+.services-grid{
+  /* grid-gap: 100px; */
+}
+
+.profile-bodyContainer {
+  display: flex;
+  padding: 0 0px;
+  grid-column-gap: 0px;
+  margin-top: 25px;
+}/*
+
+.left-side-profileContainer {
+  width: 70%;
+}
+.right-side-profileContainer {
+  width: 30%;
+}*/
+
+#logout {
+  color: rgb(255, 238, 200);
+  font-size: 12px;
+}
+
+.videos-container {
+  margin-left: 260px;
+  width: 73.8%;
+  margin-top: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color:rgba(245, 240, 240, 0.954);
+  font-size: 14px;
+  color: black;
+  border-top: solid rgba(1, 128, 187, 0.425) 1px;
+  /* padding: 30px 15%; */
+  box-shadow: 0px 2px 2px 2px rgb(112, 123, 138)
+}
+
+.videos  {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accountDel {
+  text-align: right;
+  /* padding-top: 0px; */
+}
+.deleteAccount {
+  border: 1px solid rgb(215, 130, 121);
+  border-radius: 2px;
+  background-color: rgb(159, 159, 159); 
+  color: rgb(220, 18, 18);
+  margin-top: 10px;
+}
+
+.navigation-links {
+  display: flex;
+  justify-content: space-around;
+  /*box-shadow: 1px 4px 2px 0px rgb(145, 142, 153);
+  position: relative;
+  margin-bottom: 20px;*/
+}
+
+.navigation-links a {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  /*border-right: 1px solid rgba(255,255,255,.3);*/
+  /* font-size: 0px; */
+  font-size: .7em;
+}
+.navigation-links a:hover {
+  opacity: .7;
+}
+
+.navigation-links a:last-child {
+  border: none;
+}
+
+.curved-header {
+  background: rgb(26, 182, 161);
+  border-radius: 7px 7px 0 0;
+  color: white;
+  font-weight: 600;
+  /* box-shadow: 0px 1px 1px 1px rgb(111, 124, 118); */
+
+}
+
+.curved-header a {
+  font-weight: 600;
+}
+
+.border-radius-top {
+  border-radius: 10px 10px 0 0;
+}
+
+.list-image {
+  padding-left: 15%;
+  /* height: 250px; */
+}
+
+.profile-picture {
+  border-radius: 50%;
+}
+
+.pro-contacts-list-item {
+  margin-left: 10%;
+}

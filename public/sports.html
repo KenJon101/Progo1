@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>x-app</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="index.css" rel="stylesheet" type="text/css" />
+  <link href="profilepage.css" rel="stylesheet" type="text/css" />
+  <!-- <script src="https://cdn.auth0.com/js/lock/11.14/lock.min.js"></script> -->
+
+  <script>
+    let userVerified = localStorage.getItem('verified') == 'true'
+
+    if (!userVerified) {
+      //window.location.href = '/index.html';
+    }
+  </script>
+</head>
+
+<body>
+  <div class="body-overlay-profile">
+    <div class="body-overlay1">
+      <!-- <div class="keywords">keywords here</div> -->
+      <!-- <div class="body-overlay"> -->
+      <!-- <div class="keywords">keywords here</div> -->
+      <div id="navbar" class="navbar">
+        <!-- Logos and Hot it works -->
+        <div class="flex flex-center home-logo1">
+          <img src="images/logo2a1.png" class="logo1" />
+          <!-- <img src="images/Logo2a2.jpg" class="logo2" /> -->
+          <a href="/public/sports.html" id="how-it-works" style="text-decoration:none" class="howitworks"><i
+              class="far fa-eye"></i>
+            Reset</a>
+        </div>
+        <nav class="nav-list">
+          <ul class="mainNav">
+            <!-- <li><a href="index.html" id="join" class="join">Join</a></li> -->
+            <li><a href="index.html" style="text-decoration:none" id="login" class="login not-logged-in"><i
+                  class="fas fa-handshake"></i>Login|Join</a></li>
+            <li><a href="/public/profilepage.html" class="about" style="text-decoration:none"><i
+                  class="fas fa-network-wired"></i>Home</a>
+            </li>
+            <li><a href="faq.html" class="faq" style="text-decoration:none"><i
+                  class="far fa-question-circle"></i>FAQ</a>
+            </li>
+            <li><a href="mailto:keng4105@gmail.com" class="contact" target="_blank" style="text-decoration:none"><i
+                  class="fas fa-envelope"></i>Contact</a></li>
+            <li class="logged-in"><a href="#" id="logout" style="text-decoration:none"><i
+                  class="fas fa-external-link-alt"></i>Logout</a>
+            </li>
+          </ul>
+          <a href="home.html" class="home" style="text-decoration:none"><img class="home-logo"
+              src="./images/logoAbr.png"></a>
+        </nav>
+
+      </div>
+
+
+      <!--<img class="notebook-wrapper" src="./images/noteBook.png">-->
+      <div class="statusWrapper">
+        <iframe id="timeStamp"
+          src="https://free.timeanddate.com/clock/i6o01rsd/n784/fn16/fcfff/tct/pct/bas0/bat7/bacfff/pl0/pr0/pt2/pb0/tt0/th2/ta1/tb4"
+          frameborder="0" width="202" height="32" allowTransparency="true">
+        </iframe>
+        <div class="profile-user-id-container">
+          <div class="profile-user-id">. . . Hello again, <span id="user-name"></span> &nbsp;:) </div>
+        </div>
+      </div>
+      <div class="searchBar">
+        <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+          <input name="sitesearch" type="hidden" value="">
+          <input autocomplete="on" class="form-control search" name="q" placeholder="Search the web for . . . "
+            required="required" type="text">
+          <button class="button-search" type="submit">Search</button>
+        </form>
+      </div>
+
+      <!-- <div class="pro-tools">Pro-Tools</div> -->
+      <!-- <div class="services-title"></div> -->
+
+  
+    <!-- Sidebar -->
+    <div class="profile-box">
+      <img id="profileAvatar" alt="" />
+      <div id="picture-text">~ What will you do Today ~</div>
+
+      <input style="display: none;" name="image-file" id="image-file" type="file" onchange="grabFile(event)">
+      <!-- <div class="avatarPicButtons"> -->
+      <button class="changePic">Change</button>
+      <button class="removePic" id="removePic">Remove</button>
+
+
+      <div class="profile-image-block3 twoBySix" id="skills-form-container">
+        <h3>Your Pro-Contacts</h3>
+        <div class="profile-contact-list"></div>
+      </div>
+    </div>
+
+      
+      <div class="profile-bodyContainer">
+        <!-- <div class="profile-top">You are currently Logged In</div> -->
+        <div class="left-side-profileContainer">
+
+          <!-- Top navigation / header -->
+          <div class="navigation-links curved-header">
+              <a href="/public/music.html">My Music</a>
+              <a href="/public/news.html">My News</a>
+              <a href="/public/sports.html">My Sports</a>
+              <a href="/public/finance.html">My Finance</a>
+              <a href="/public/weather.html">My Weather</a>
+              <a href="/public/entertainment.html">My Entertainment</a>
+              <a href="/public/shopping.html">My Shopping</a>
+            </div>
+
+
+          <div class="profile-services-grid">
+
+            <div class="profile-text-block2 twoBySix">
+              <h3><a class="a-text" href="https://mail.google.com/mail/u/0/#inbox" target="_blank">My Mail</a>
+              </h3>
+              <p class="list-image">
+                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img src="./images2/gmail.png" alt=""></a>
+              </p>
+            </div>
+
+            <div class="profile-text-block-3 twoBySix">
+              <h3><a class="a-text" href="https://calendar.google.com/calendar/r?tab=rc&pli=1" target="_blank">My Calendar</a></h3>
+              <p class="list-image">
+                  <a href="https://calendar.google.com/calendar/r?tab=rc&pli=1" target="_blank"><img src="./images2/calendar.png" alt="" /></a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+        <!--</div>-->
+        <div class="right-side-profileContainer border-radius-top">
+          <div id="rightside-title" class="curved-header">Pro-Tools
+          </div>
+
+          <div class="right-side-profileContent">
+            <div id="itemsOfInterest">
+              <a href="https://www.indeed.com/" target="_blank"><img src="./images2/indeed1.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.ziprecruiter.com/" target="_blank"><img src="./images2/zipR.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.careerbuilder.com" target="_blank"><img src="./images2/careerbuild.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.google.com/maps/" target="_blank"><img src="./images2/map1direct.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.apartments.com/" target="_blank"><img src="./images2/aoartments.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://studentaid.ed.gov/sa/fafsa" target="_blank"><img src="./images2/fasfa.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.budget.com/en/reservation/make-reservation" target="_blank"><img src="./images2/carrent.jpg" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.hotels.com" target="_blank"><img src="./images2/hotels1.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.google.com/search?q=restaurants+near+me&oq=restaurants+near+me&aqs=chrome..69i57.3408j0j4&sourceid=chrome&ie=UTF-8" target="_blank"><img src="./images2/restaurants.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.priceline.com/" target="_blank"><img src="./images2/priceline.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+                <a href="https://www.doordash.com/" target="_blank"><img src="./images2/doordash.png" alt="" /></a>
+              </div>
+            <div id="itemsOfInterest">
+                <a href="https://www.cars.com/" target="_blank"><img src="./images2/carscom.png" alt="" /></a>
+              </div>
+            <!-- <div></div> -->
+
+          </div>
+        </div>
+      </div>
+    
+
+    <div id="videos-bottom" class="videos-container profile-text-block3">
+      <h3>My Music</h3>
+      <div class="videos">
+        <div id="div_YouTube"></div>
+        <div id="div_YouTubeB"></div>
+        <div id="div_YouTubeC"></div>
+      </div>
+      <!-- recipes debug section -->
+      <div class="accountDel">
+        <button class="deleteAccount" id="deleteMyAccount">Delete my account</button>
+      </div>
+    </div>
+
+    <!--CLosing Page Body Container-->
+
+    <footer class="site-footer">
+
+            <div class="footer-grid">
+
+                <div class="column-footer-logo">
+                    <div>
+                        <img src="images/logo1a11.png" />
+                    </div>
+                    Getting You Connected
+                </div>
+                
+                <div class="column2-footer">
+                    <a href="#">Sign Up</a>
+                    <a href="#">Login</a>
+                    <a href="#">later</a>
+                </div>
+                <div class="column3-footer">
+                    <a href="#">Help</a>
+                    <a href="#">Terms</a>
+                </div>
+
+
+                <div class="column4-footer">
+                    <form>
+                        <a href="#">Inquire</a>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-links">
+                    <a href="#">Help</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Business</a>
+                    <a href="#">Marketing</a>
+                    <a href="#">Developers</a>
+                    <a href="#">Privacy</a>
+                </div>
+                <div class="footer-bottom-social">
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-youtube-square"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                © 2019 Project.com. All rights reserved.
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase-storage.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script async src="https://www.youtube.com/iframe_api"></script>
+
+    <script src="lib.js"></script>
+    <script src="config.js"></script>
+    <script src="auth.js"></script>
+    <script src="recipes.js"></script>
+    <script src="musicMatch.js"></script>
+    <script src="profilepage.js"></script>
+
+    <script>
+      $(document).ready(async function () {
+        let userObj = await getUser();
+        if (!userObj || userObj.verified !== 1) {
+          window.location.href = '/';
+        }
+      });
+    </script>
+
+    <script>
+      function onYouTubeIframeAPIReady() {
+
+        var player, player2, player3;
+
+        player = new YT.Player('div_YouTube', {
+          videoId: 'WlneLrftoOM',
+          host: 'https://www.youtube.com',
+          width: 230,
+          height: 200,
+          playerVars: {
+            'autoplay': 0,
+            'controls': 1,
+            'showinfo': 0,
+            'modestbranding': 0,
+            'loop': 1,
+            'fs': 0,
+            'cc_load_policty': 0,
+            'iv_load_policy': 3
+          },
+          events: {
+            'onReady': function (e) {
+              // e.target.mute();
+              e.target.setVolume(10);      // YOU CAN SET VALUE TO 100 FOR MAX VOLUME.
+            }
+          }
+
+        });
+
+        player2 = new YT.Player('div_YouTubeB', {
+          videoId: 'WlneLrftoOM',
+          host: 'https://www.youtube.com',
+          width: 230,
+          height: 200,
+          playerVars: {
+            'autoplay': 0,
+            'mute': 0,
+            'controls': 1,
+            'showinfo': 0,
+            'modestbranding': 0,
+            'loop': 1,
+            'fs': 0,
+            'cc_load_policty': 0,
+            'iv_load_policy': 3
+          },
+          events: {
+            'onReady': function (e) {
+              // e.target.mute();
+              e.target.setVolume(10);      // YOU CAN SET VALUE TO 100 FOR MAX VOLUME.
+            }
+          }
+
+        });
+
+        player2 = new YT.Player('div_YouTubeC', {
+          videoId: 'WlneLrftoOM',
+          host: 'https://www.youtube.com',
+          width: 230,
+          height: 200,
+          playerVars: {
+            'autoplay': 0,
+            'mute': 0,
+            'controls': 1,
+            'showinfo': 0,
+            'modestbranding': 0,
+            'loop': 1,
+            'fs': 0,
+            'cc_load_policty': 0,
+            'iv_load_policy': 3
+          },
+          events: {
+            'onReady': function (e) {
+              // e.target.mute();
+              e.target.setVolume(10);      // YOU CAN SET VALUE TO 100 FOR MAX VOLUME.
+            }
+          }
+
+        });
+      }
+    </script>
+    <script src="index.js"></script>
+  </div>
+  </div>
+</body>
+
+</html>
