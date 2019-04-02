@@ -416,8 +416,8 @@ h2 {
   content: '';
   display: block;
   height: 1px;
-  width: 81%;
-  background: white;
+  width: 12%;
+  background: rgb(130, 145, 168);
 }
 
 .howitworks{
