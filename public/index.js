@@ -1,6 +1,45 @@
 $(function () {
 
+  $('.searchform').on('submit', function(event) {
+    event.preventDefault();
 
+    var $form = $(this);
+
+    // Gets searched value
+    var search = $('.search').val();
+
+    // Gets search action
+    var action = $form.attr('action') + '?q=' + search;
+
+    // Creates iframe and appends to container
+    /*var iframe = '<iframe src="'+ action +'"></iframe>';
+    $('.left-side-profileContainer').prepend(iframe);*/
+
+    window.open(action, 'Google Search', 'width=800, height=500');
+
+  });
+
+  $(document).on('click', '.pop-up-link', function(event) {
+    // Don't open link
+    event.preventDefault();
+
+    var pos = ($(this).data('position') || '200 100').split(' ');
+
+    console.log(pos)
+
+    var config = [
+      'width=720',
+      'height=720',
+      'top='+ pos[0],
+      'left='+ pos[1]
+    ];
+
+    console.log('config', config)
+
+    // Opens it on a custom window
+    var link = $(this).attr('href');
+    window.open(link, link, config.join());
+  });
   // const config = {
   //   apiKey: "AIzaSyA1W6fgbxENa7AbChzrZuKVRFSiQwBauLg",
   //   authDomain: "cproject-9bb5f.firebaseapp.com",

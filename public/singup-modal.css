@@ -1,26 +1,38 @@
 body {
-  background: rgb(35, 86, 140);
+  background: rgb(26, 81, 141);
   text-align: center;
 }
 
+#signup-logo {
+  margin-top: 5%;
+  border-radius: 50%;
+  background: rgb(26, 81, 141);
+  width: 380px;
+  transition: .3s all;
+}
+
+#signup-logo.small {
+  width: 240px;
+  margin-top: 20px;
+}
+
 header {
-  background: url(/images/project-main-logo.jpg) no-repeat;
-  height: 100px;
+  /*background: url(/images/project-main-logo.jpg) no-repeat;
   background-size: contain;
-  background-position: center;
-  position: fixed;
-  width: 100%;
+  background-position: center;*/
 }
 
 .body-overlay2 {
-  display: flex;
-  align-items: center;
-  height: 100vh;
   color: white;
 }
 
+#phone-verify-text{
+  margin-top: 2%;
+}
+
 input {
-  padding: 3px 5px;
+  text-align: center;
+  padding: 0px 5px;
 }
 
 /* modal */
@@ -29,16 +41,71 @@ input {
   text-align: center;
 }
 
-#profile-modal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 75%;
-  margin: auto;
+input,
+button {
+  border-radius: 3px;
+  line-height: 30px;
+  font-size: 18px;
+  box-sizing: border-box;
 }
 
-#termsConditionsSection{
+input {
+  width: 30%;
+  margin-top: 10px;
+}
+
+button {
+  margin-top:1%;
+  border-radius: 50%;
+  width: 42px;
+  height: 39px;
+  background: rgb(235, 200, 124);
+  color: rgb(0, 73, 107);
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-weight: bold;
+  font-size: 16px;
+  
+}
+
+button:hover{
+  cursor: pointer;
+  background: rgb(47, 184, 154);
+  color: white;
+}
+
+
+#agree-buttons button {
+  width: 110px;
+  height: auto;
+  font-size: 13px;
+  border-radius: 2px;
+  background: green;
+  color: white;
+}
+
+#agree-buttons button.grey {
+  background: grey;
+}
+
+
+#profile-modal {
+  width: 52%;
+  margin: 0 auto 30px;
+}
+
+#termsConditionsSection .terms-and-conditions {
+  height: 40vh;
+  overflow: scroll;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 3px;
+  margin: 25px 0;
+  color:rgb(0, 33, 63);
+}
+
+#termsConditionsSection{ 
   display: none;
+  font-size: 12px;
 }
 
 .modal-text{
@@ -57,4 +124,8 @@ input {
 
 .modal-agreement {
   margin-bottom: 15px;
+}
+
+.top-level-terms {
+  padding: 0 2em;
 }

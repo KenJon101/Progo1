@@ -118,39 +118,40 @@ async function emptyAvatar() {
 
 // }
 
-// $('#user-name').text('(loading...)');
+$('#user-name').text('(loading...)');
 
 
-// async function renderUser(user) {
+async function renderUser(user) {
 
-//   // console.log('listenr 2');
+    // console.log('listenr 2');
 
-//   // console.log('render user')
-//   console.log(user)
+    // console.log('render user')
+    console.log(user)
 
-//   if (user) {
-//     console.log(user);
-//     // User is signed in.
-//     const { uid, firstname, email } = user;
-//     userID = uid;
+    if (user) {
+        console.log(user);
+        // User is signed in.
+        const { userUID, firstname, email } = user;
+        userID = userUID;
 
-//     const snap = await firebase.firestore().collection('users').where(firebase.firestore.FieldPath.documentId(), '==', uid).get();
-//     if (!snap.docs.length) {
-//       console.log('something went wrong');
-//       // alert('something went wrong. this user has no entry in `users` collection!');
-//     }
+        const snap = await firebase.firestore().collection('users').where(firebase.firestore.FieldPath.documentId(), '==', uid).get();
+        if (!snap.docs.length) {
+            console.log('something went wrong');
+            // alert('something went wrong. this user has no entry in `users` collection!');
+        }
 
-//     console.log();
-//     let user_user = snap.docs[0].data()
-//     $('#user-name').text(user_user.firstname + ' (' + email + ')');
-//     document.querySelector('#profileAvatar').src = user_user.avatar
+        let user_user = snap.docs[0].data()
+        // $('#user-name').text(user_user.firstname + ' (' + email + ')');
+        $('#user-name').text(user_user.firstname);
+        document.querySelector('#profileAvatar').src = user_user.avatar
 
-//     // showUserRecipes(snap.docs[0].data());
-//   }
-//   else {
-//     $('#user-name').text('<anonymous>');
-//   }
-// }
+        // showUserRecipes(snap.docs[0].data());
+    } else {
+        $('#user-name').text('<anonymous>');
+    }
+}
+
+getUser().then(renderUser);
 
 // ################################################################################################
 // Additional user data
@@ -315,10 +316,14 @@ function buildSkillsForm(skills, type, appendTo) {
 
 
 function displayUsers(users, appendTo) {
+    if (users.length < 80) {
+        return showNotEnoughUsers(appendTo);
+    }
+
     let div = $('<div>');
     users.forEach(function (user) {
         let userDiv = $('<div>', {
-            class: "profile-text-block2 oneByFive pro-contacts-list-item"
+            class: "oneByFive pro-contacts-list-item"
         });
         var $image = $('<img>', { src: user.avatar });
         $image.addClass('profile-picture');
@@ -328,6 +333,11 @@ function displayUsers(users, appendTo) {
         div.append(userDiv);
     });
     $(appendTo).html(div.html());
+}
+
+function showNotEnoughUsers(container) {
+    var message = '<div class="empty-users">We are currenlty updating our Database to ensure optimization in your region. You will recieve a notice by email when our updates are complete, or you may check back at anytime to see when this message is no longer displayed and our search feature is refreshed.</div>';
+    $(container).html(message);
 }
 
 async function getUsersByIds(ids) {
