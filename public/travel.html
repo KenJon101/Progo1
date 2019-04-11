@@ -36,7 +36,7 @@
           <!-- <img src="images/Logo2a2.jpg" class="logo2" /> -->
           <a href="/public/weather.html" id="how-it-works" style="text-decoration:none" class="howitworks"><i
               class="far fa-eye"></i>
-            Reset</a>
+            Reset - Reload</a>
         </div>
         <nav class="nav-list">
           <ul class="mainNav">
@@ -72,14 +72,20 @@
           <div class="profile-user-id">. . . Hello again, <span id="user-name"></span> &nbsp;:) </div>
         </div>
       </div>
-      <div class="searchBar">
-        <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
-          <input name="sitesearch" type="hidden" value="">
-          <input autocomplete="on" class="form-control search" name="q" placeholder="Search the web for . . . "
-            required="required" type="text">
-          <button class="button-search" type="submit">Search</button>
-        </form>
-      </div>
+      <div class="searchBars">
+
+          <div class="searchBar">
+              <form action="https://www.google.com/search" class="searchform searchweb" method="get" name="searchform" target="_blank">
+                <input name="sitesearch" type="hidden" value="">
+                <input class="extra-params" type="hidden" value="">
+                <input autocomplete="on" class="form-control search" name="q" placeholder="Search the web for . . . "
+                  required="required" type="text">
+                <button class="button-search" type="submit">Search</button>
+                <span class="or-separator">or</span>
+                <button class="button-search near-me" type="submit">Search near me</button>
+              </form>
+            </div>
+        </div>
 
       <!-- <div class="pro-tools">Pro-Tools</div> -->
       <!-- <div class="services-title"></div> -->
@@ -96,9 +102,9 @@
       <button class="removePic" id="removePic">Remove</button>
 
 
-      <div class="profile-image-block3 twoBySix auto-height">
-          <img src="/public/images2/gmail.png" class="full-width"> 
-          <img src="/public/images2/calendar.png" class="full-width">
+      <div class="calendar-email profile-image-block3 twoBySix auto-height">
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"> <img src="/public/images2/gmail.png" class="full-width"> </a>
+          <a href="https://calendar.google.com/calendar/r?tab=rc&pli=1" target="_blank"><img src="/public/images2/calendar.png" class="full-width"></a>
       </div>
     </div>
 
@@ -110,124 +116,124 @@
           <!-- Top navigation / header -->
           <div class="navigation-links-t curved-header-t">
               <a href="/public/profilepage.html">Main</a>
+              <a href="/public/shopping.html">My Shopping</a>
               <a href="/public/news.html">My News/ Weather</a>
               <a href="/public/sports.html">My Sports</a>
               <a href="/public/finance.html">My Finance-RE</a>
               <a href="/public/entertainment.html">My Entertainment</a>
               <a href="/public/travel.html">My Travel</a>
-              <a href="/public/shopping.html">My Shopping</a>
             </div>
 
 
           <div class="main-grid profile-services-grid-t">
 
               <div class="twoBySix">
-                  <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.amazon.com/" target="_blank">Amazon</a>
+                  <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.expedia.com" target="_blank">Expedia</a>
                   </h3>
                   <p class="list-image">
-                      <a href="https://www.amazon.com" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./shoppingimg/amazon-7.jpg" alt="" /></a>
+                      <a href="https://www.expedia.com" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./travelimg/expedia.jpg" alt="" /></a>
                   </p>
                 </div>
 
               <div class="twoBySix">
-                  <h3><a class="b-text" href="https://www.ebay.com/" target="_blank">Ebay</a>
+                  <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.travelocity" target="_blank">Travelocity</a>
                   </h3>
                   <p class="list-image">
-                      <a href="https://www.ebay.com" target="_blank"><img src="./images2/myebay.png" alt="" /></a>
+                      <a href="https://www.travelocity.com" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./travelimg/travelocity.jpeg" alt="" /></a>
                   </p>
                 </div>
 
                    <div class="twoBySix">
-                      <h3><a class="b-text" href="https://www.costco.com/" target="_blank">Costco</a>
+                      <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.priceline.com/" target="_blank">Priceline</a>
                       </h3>
                       <p class="list-image">
-                          <a href="https://www.costco.com" target="_blank"><img src="./shoppingimg/costco.jpg" alt="" /></a>
+                          <a href="https://www.priceline.com" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./travelimg/priceline.png" alt="" /></a>
                       </p>
                     </div>
 
                     <div class="twoBySix">
-                        <h3><a class="b-text" href="https://www.tripadvisor.com/" target="_blank">Kohls</a>
+                        <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.booking.com/" target="_blank">Booking</a>
                         </h3>
                         <p class="list-image">
-                            <a href="https://www.tripadvisor.com/" target="_blank"><img src="./shoppingimg/kohls.jpg" alt="" /></a>
+                            <a href="https://www.booking.com/" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./travelimg/booking.jpeg" alt="" /></a>
                         </p>
                       </div>
 
                       <div class="twoBySix">
-                          <h3><a class="b-text" href="https://www.sears.com/" target="_blank">Sears</a>
+                          <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.trivago.com/" target="_blank">Trivago</a>
                           </h3>
                           <p class="list-image">
-                              <a href="https://www.sears.com" target="_blank"><img src="./shoppingimg/sears.jpg" alt="" /></a>
+                              <a href="https://www.trivago.com" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./travelimg/trivago.png" alt="" /></a>
                           </p>
                         </div>
 
                         <div class="twoBySix">
-                            <h3><a class="b-text" href="https://www.walmart.com/" target="_blank">Walmart</a>
+                            <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.hotels.com/" target="_blank">Hotels</a>
                             </h3>
                             <p class="list-image">
-                                <a href="https://www.walmart.com" target="_blank"><img src="./shoppingimg/walmart.jpg" alt="" /></a>
+                                <a href="https://www.hotels.com" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./images2/hotels1.png" alt="" /></a>
                             </p>
                           </div>
 
                       <div class="twoBySix">
-                          <h3><a class="b-text" href="https://www.bestbuy.com/" target="_blank">Bestbuy</a>
+                          <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.airbnb.com/" target="_blank">AirBnB</a>
                           </h3>
                           <p class="list-image">
-                              <a href="https://www.bestbuy.com" target="_blank"><img src="./shoppingimg/bestbuy.jpg" alt="" /></a>
+                              <a href="https://www.airbnb.com" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./images2/airbnb.png" alt="" /></a>
                           </p>
                         </div>
                         <div class="twoBySix">
-                            <h3><a class="b-text" href="https://www.target.com/" target="_blank">Target</a>
+                            <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.kayak.com/" target="_blank">Kayak</a>
                             </h3>
                             <p class="list-image">
-                                <a href="https://www.target.com" target="_blank"><img src="./shoppingimg/target.png" alt="" /></a>
+                                <a href="https://www.kayak.com" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./travelimg/kayak.png" alt="" /></a>
                             </p>
                           </div>
 
                           <div class="twoBySix">
-                              <h3><a class="b-text" href="https://www.lowes.com/" target="_blank">Lowes</a>
+                              <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.hotwire.com/" target="_blank">Hotwire</a>
                               </h3>
                               <p class="list-image">
-                                  <a href="https://www.lowes.com" target="_blank"><img src="./shoppingimg/lowes.jpg" alt="" /></a>
+                                  <a href="https://www.hotwire.com" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./travelimg/hotwire.jpeg" alt="" /></a>
                               </p>
                             </div>
 
                             <div class="twoBySix">
-                                <h3><a class="b-text" href="https://www.homedepot.com/" target="_blank">Home Depot</a>
+                                <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.tripadvisor.com/" target="_blank">Trip Advisor</a>
                                 </h3>
                                 <p class="list-image">
-                                    <a href="https://www.homedepot.com" target="_blank"><img src="./shoppingimg/homedepot.png" alt="" /></a>
+                                    <a href="https://www.tripadvisor.com" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./travelimg/tripadvisr.png" alt="" /></a>
                                 </p>
                               </div>
 
                               <div class="twoBySix">
-                                  <h3><a class="b-text" href="https://www.aliexpress.com/" target="_blank">Ali-Express</a>
+                                  <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.carnival.com/" target="_blank">Carnival</a>
                                   </h3>
                                   <p class="list-image">
-                                      <a href="https://www.aliexpress.com" target="_blank"><img src="./shoppingimg/alibaba2.jpg" alt="" /></a>
+                                      <a href="https://www.carnival.com" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./travelimg/carnival.jpg" alt="" /></a>
                                   </p>
                                 </div>
     
                                 <div class="twoBySix">
-                                    <h3><a class="b-text" href="https://www.dickssportinggoods.com/" target="_blank">Dick's Sporting Goods</a>
+                                    <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.royalcaribbean.com/" target="_blank">Royal Caribbean</a>
                                     </h3>
                                     <p class="list-image">
-                                        <a href="https://www.dickssportinggoods.com" target="_blank"><img src="./shoppingimg/dicks.png" alt="" /></a>
+                                        <a href="https://www.royalcaribbean.com" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./travelimg/royalc.png" alt="" /></a>
                                     </p>
                                   </div>
 
                                   <div class="twoBySix">
-                                      <h3><a class="b-text" href="https://macys.com" target="_blank">MACY'S</a>
+                                      <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.regent.com/" target="_blank">Regent</a>
                                       </h3>
                                       <p class="list-image">
-                                        <a href="https://macys.com" target="_blank"><img src="./shoppingimg/macys.png" alt=""></a>
+                                          <a class="b-text pop-up-link pop-up-link" data-position="40 8"  href="https://www.regent.com/" target="_blank"><img src="./travelimg/regent.png" alt="" /></a>
                                       </p>
                                     </div>
                         
                                     <div class="profile-text-block-3 twoBySix">
-                                      <h3><a class="b-text" href="https://www.walgreens.com/" target="_blank">Walgreens</a></h3>
+                                      <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.norwegian.com/" target="_blank">Norwegian</a></h3>
                                       <p class="list-image">
-                                          <a href="https://www.walgreens.com/" target="_blank"><img src="./shoppingimg/walgreens.png" alt="" /></a>
+                                          <a href="https://www.norwegian.com/" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./travelimg/norwegian.png" alt="" /></a>
                                       </p>
                                     </div>
 
@@ -240,46 +246,46 @@
 
           <div class="right-side-profileContent">
               <div id="itemsOfInterest">
-                  <a href="https://www.indeed.com/" target="_blank"><img src="./images2/indeed1.png" alt="" /></a>
+                  <a class="b-text pop-up-link pop-up-link" data-position="0 0"  href="https://www.travelex.com/currency-converter" target="_blank"><img src="./travelimg/curencyx.jpg" alt="" /></a>
                 </div>
                 <div id="itemsOfInterest">
-                  <a href="https://www.ziprecruiter.com/" target="_blank"><img src="./images2/zipR.png" alt="" /></a>
+                    <a class="b-text pop-up-link pop-up-link" data-position="0 0"  href="https://www.google.com/maps/" target="_blank"><img src="./images2/map1direct.png" alt="" /></a>
+                  </div>
+                  <div id="itemsOfInterest">
+                      <a class="b-text pop-up-link pop-up-link" data-position="0 0"  href="https://translate.google.com/?hl=en&tab=wT&authuser=0#view=home&op=translate&sl=en&tl=es" target="_blank"><img src="./travelimg/translate.png" alt="" /></a>
+                    </div>
+                    <div id="itemsOfInterest">
+                        <a class="b-text pop-up-link pop-up-link" data-position="0 0"  href="https://www.google.com/search?q=restaurants+near+me&oq=restaurants+near+me&aqs=chrome..69i57.3408j0j4&sourceid=chrome&ie=UTF-8" target="_blank"><img src="./images2/restaurants.png" alt="" /></a>
+                      </div>
+                      <div id="itemsOfInterest">
+                          <a href="https://www.travelandleisure.com" target="_blank"><img src="./travelimg/travell.jpg" alt="" /></a>
+                        </div>
+                        <div id="itemsOfInterest">
+                            <a class="b-text pop-up-link pop-up-link" data-position="0 0"  href="https://www.orbitz.com" target="_blank"><img src="./travelimg/orbitz.png" alt="" /></a>
+                          </div>
+                        <div id="itemsOfInterest">
+                            <a class="b-text pop-up-link pop-up-link" data-position="0 0"  href="https://www.budget.com/en/reservation/make-reservation" target="_blank"><img src="./images2/carrent.jpg" alt="" /></a>
+                          </div>
+                          <div id="itemsOfInterest">
+                              <a class="b-text pop-up-link pop-up-link" data-position="80 5" href="https://www.trycaviar.com/" target="_blank"><img src="./shoppingimg/caviardelivery.png" alt="" /></a>
+                            </div>
+              <div id="itemsOfInterest">
+                  <a class="b-text pop-up-link pop-up-link" data-position="80 5" href="https://www.indeed.com/" target="_blank"><img src="./images2/indeed1.png" alt="" /></a>
                 </div>
                 <div id="itemsOfInterest">
-                  <a href="https://www.careerbuilder.com" target="_blank"><img src="./images2/careerbuild.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.google.com/maps/" target="_blank"><img src="./images2/map1direct.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                    <a href="https://www.realtor.com/" target="_blank"><img src="./images2/realtorcom.png" alt="" /></a>
+                    <a class="b-text pop-up-link pop-up-link" data-position="0 0"  href="https://www.realtor.com/" target="_blank"><img src="./images2/realtorcom.png" alt="" /></a>
                   </div>
                 <div id="itemsOfInterest">
-                  <a href="https://www.apartments.com/" target="_blank"><img src="./images2/aoartments.png" alt="" /></a>
+                  <a class="b-text pop-up-link pop-up-link" data-position="0 0"  href="https://www.apartments.com/" target="_blank"><img src="./images2/aoartments.png" alt="" /></a>
                 </div>
                 <div id="itemsOfInterest">
-                  <a href="https://studentaid.ed.gov/sa/fafsa" target="_blank"><img src="./images2/fasfa.png" alt="" /></a>
+                  <a class="b-text pop-up-link pop-up-link" data-position="0 0"  href="https://www.hotels.com" target="_blank"><img src="./images2/hotels1.png" alt="" /></a>
                 </div>
                 <div id="itemsOfInterest">
-                  <a href="https://www.budget.com/en/reservation/make-reservation" target="_blank"><img src="./images2/carrent.jpg" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.hotels.com" target="_blank"><img src="./images2/hotels1.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.google.com/search?q=restaurants+near+me&oq=restaurants+near+me&aqs=chrome..69i57.3408j0j4&sourceid=chrome&ie=UTF-8" target="_blank"><img src="./images2/restaurants.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.priceline.com/" target="_blank"><img src="./images2/priceline.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                    <a href="https://www.hrblock.com/" target="_blank"><img src="./images2/hrblock.png" alt="" /></a>
+                    <a class="b-text pop-up-link pop-up-link" data-position="0 0"  href="https://www.doordash.com/" target="_blank"><img src="./images2/doordash.png" alt="" /></a>
                   </div>
                 <div id="itemsOfInterest">
-                    <a href="https://www.doordash.com/" target="_blank"><img src="./images2/doordash.png" alt="" /></a>
-                  </div>
-                <div id="itemsOfInterest">
-                    <a href="https://www.cars.com/" target="_blank"><img src="./images2/carscom.png" alt="" /></a>
+                    <a class="b-text pop-up-link pop-up-link" data-position="0 0"  href="https://www.cars.com/" target="_blank"><img src="./images2/carscom.png" alt="" /></a>
                   </div>
             <!-- <div></div> -->
 
@@ -290,13 +296,16 @@
 
       <div class="videos-container images-bottom-container profile-text-block-3">
           <div class="flex space-around">
-            <!--<img src="images/logo1a11.png" /> alt + shift + arrow top bottom-->
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
-          </div>
+              <!--<img src="images/logo1a11.png" /> alt + shift + arrow top bottom-->
+              <a href="https://https://www.google.com/search?hl=en&ei=FNSkXJPHDqjv_QbjqbCIAg&q=weather+near+me&oq=weather+near+me&gs_l=psy-ab.3..35i39l2j0l8.3068.3980..4301...0.0..0.312.1243.2j0j3j1......0....1..gws-wiz.......0i71.66EzYxx_NzM" target="_blank"><img src="./images/weather.png" alt="" /></a>
+              
+              <a href="https://www.google.com/search?biw=1437&bih=731&ei=yQ-lXMrFKs2V_Qb16L-QDg&q=grocery+store+near+me" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./travelimg/grocery-store.jpg" alt=""></a>
+
+              <a href="https://www.google.com/search?ei=jw2lXMbqFqa-ggeb86_QCg&q=attractions+near+me" target="_blank"><img src="./travelimg/attractions.jpg" alt="" /></a>            
+              
+              <a href="https://www.google.com/search?hl=en&ei=GdSkXILbIOm9ggfQnoCoAw&q=traffic+near+me&oq=traffic+near+me&gs_l=psy-ab.3..35i39j0i7i30l9.23091.25026..25828...0.0..0.158.819.2j5......0....1..gws-wiz.......0i71j35i304i39.zP6gv7h_Zy0" target="_blank"><img src="./images/traffic.jpg" alt="" /></a>           
+              <a href="https://www.astrology.com/horoscope/daily.html" target="_blank"><img src="./images/horoscopes.jpg" alt="" /></a>    
+            </div>
         </div>
         <div class="videos-container images-bottom-container profile-text-block-3">
         <div class="accountDel">
@@ -330,7 +339,7 @@
 
             <div class="column4-footer">
                 <form>
-                    <a href="#">Inquire</a>
+                    <a href="#">Inquire<img class="footer-mail" src="images/mail-envelope-icon.png"/></a>
                 </form>
             </div>
         </div>
@@ -476,6 +485,7 @@
       }
     </script>
     <script src="index.js"></script>
+    <script src="log-direct.js"></script>
   </div>
   </div>
 </body>

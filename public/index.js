@@ -1,6 +1,6 @@
 $(function () {
 
-  $('.searchform').on('submit', function(event) {
+  /*$('.searchform').on('submit', function(event) {
     event.preventDefault();
 
     var $form = $(this);
@@ -12,33 +12,84 @@ $(function () {
     var action = $form.attr('action') + '?q=' + search;
 
     // Creates iframe and appends to container
-    /*var iframe = '<iframe src="'+ action +'"></iframe>';
-    $('.left-side-profileContainer').prepend(iframe);*/
+    var iframe = '<iframe src="'+ action +'"></iframe>';
+    $('.left-side-profileContainer').prepend(iframe);
 
     window.open(action, 'Google Search', 'width=800, height=500');
+  });*/
 
-  });
+  var popUpTargets = [
+      '.right-side-profileContent a',
+      '.pop-up-link',
+      '.images-bottom-container a',
+      '.main-grid a',
+      '.calendar-email a'
+  ].join();
 
-  $(document).on('click', '.pop-up-link', function(event) {
+  $(document).on('click', popUpTargets, function(event) {
     // Don't open link
     event.preventDefault();
 
-    var pos = ($(this).data('position') || '200 100').split(' ');
+    this; // Some link HTML element
+
+
+    var defaultPosition = '200 100';
+
+    var $link = $(this);
+    var pos = ($(this).data('position') || defaultPosition).split(' ');
+    var size = $link.data('size') || 'large';
+
+    this; // Some link HTML element
+    $link; // Some link HTML element.. but jQuery "version"
 
     console.log(pos)
 
-    var config = [
-      'width=720',
-      'height=720',
-      'top='+ pos[0],
-      'left='+ pos[1]
-    ];
+    var config = {
+      large: [
+        'width=1220',
+        'height=665',
+        'top='+ pos[0],
+        'left='+ pos[1]
+      ],
+      medium: [
+        'width=800',
+        'height=400',
+        'top='+ pos[0],
+        'left='+ pos[1]
+      ],
+      small: [
+        'width=500',
+        'height=500',
+        'top='+ pos[0],
+        'left='+ pos[1]
+      ]
+    }[size];
 
     console.log('config', config)
 
     // Opens it on a custom window
     var link = $(this).attr('href');
     window.open(link, link, config.join());
+  });
+
+  $('form.searchform').on('submit', function(event) {
+    event.preventDefault();
+    var search = $('[name="q"]').val();
+    var url = 'https://www.google.com/search?q=' + search;
+
+    window.open(url, 'Google Search', 'width=800, height=500, top=200, left=200');
+  })
+
+  $('.near-me').on('click', function() {
+    console.log('click!')
+    var input = $('[name="q"]');
+    var value = input.val();
+
+    input.val(value + ' near me');
+
+    setTimeout(function () {
+      input.val(value);
+    });
   });
   // const config = {
   //   apiKey: "AIzaSyA1W6fgbxENa7AbChzrZuKVRFSiQwBauLg",
@@ -191,3 +242,24 @@ if(isLoggedIn()) {
     $('.not-logged-in').show();
   }
 });*/
+
+function createMobileMenu() {
+  var navLinks = $('.navigation-links');
+  var dropdownMenu = $('<div class="mobile-dropdown"><button>My Menu (Open)</button></div>');
+  var menuLinks = $('<div class="menu-links"></div>');
+
+  dropdownMenu.find('button').on('click', function() {
+    dropdownMenu.toggleClass('opened');
+  });
+
+  navLinks.find('a').each(function() {
+    var link = $(this).clone();
+    menuLinks.append(link);
+  });
+  
+  // Appends menus
+  dropdownMenu.append(menuLinks);
+  navLinks.append(dropdownMenu);
+}
+
+createMobileMenu();

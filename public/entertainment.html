@@ -36,7 +36,7 @@
           <!-- <img src="images/Logo2a2.jpg" class="logo2" /> -->
           <a href="/public/entertainment.html" id="how-it-works" style="text-decoration:none" class="howitworks"><i
               class="far fa-eye"></i>
-            Reset</a>
+              Reset - Reload</a>
         </div>
         <nav class="nav-list">
           <ul class="mainNav">
@@ -72,15 +72,20 @@
           <div class="profile-user-id">. . . Hello again, <span id="user-name"></span> &nbsp;:) </div>
         </div>
       </div>
-      <div class="searchBar">
-        <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
-          <input name="sitesearch" type="hidden" value="">
-          <input autocomplete="on" class="form-control search" name="q" placeholder="Search the web for . . . "
-            required="required" type="text">
-          <button class="button-search" type="submit">Search</button>
-        </form>
-      </div>
+      <div class="searchBars">
 
+          <div class="searchBar">
+              <form action="https://www.google.com/search" class="searchform searchweb" method="get" name="searchform" target="_blank">
+                <input name="sitesearch" type="hidden" value="">
+                <input class="extra-params" type="hidden" value="">
+                <input autocomplete="on" class="form-control search" name="q" placeholder="Search the web for . . . "
+                  required="required" type="text">
+                <button class="button-search" type="submit">Search</button>
+                <span class="or-separator">or</span>
+                <button class="button-search near-me" type="submit">Search near me</button>
+              </form>
+            </div>
+        </div>
       <!-- <div class="pro-tools">Pro-Tools</div> -->
       <!-- <div class="services-title"></div> -->
 
@@ -95,9 +100,9 @@
       <button class="changePic">Change</button>
       <button class="removePic" id="removePic">Remove</button>
 
-      <div class="profile-image-block3 twoBySix auto-height">
-          <img src="/public/images2/gmail.png" class="full-width"> 
-          <img src="/public/images2/calendar.png" class="full-width">
+      <div class="calendar-email profile-image-block3 twoBySix auto-height">
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"> <img src="/public/images2/gmail.png" class="full-width"> </a>
+          <a href="https://calendar.google.com/calendar/r?tab=rc&pli=1" target="_blank"><img src="/public/images2/calendar.png" class="full-width"></a>
       </div>
     </div>
       
@@ -108,12 +113,12 @@
           <!-- Top navigation / header -->
           <div class="navigation-links-e curved-header-e">
               <a href="/public/profilepage.html">Main</a>
+              <a href="/public/shopping.html">My Shopping</a>
               <a href="/public/news.html">My News/ Weather</a>
               <a href="/public/sports.html">My Sports</a>
               <a href="/public/finance.html">My Finance-RE</a>
               <a href="/public/entertainment.html">My Entertainment</a>
               <a href="/public/travel.html">My Travel</a>
-              <a href="/public/shopping.html">My Shopping</a>
             </div>
 
 
@@ -128,105 +133,105 @@
                 </div>
 
               <div class="twoBySix">
-                  <h3><a class="e-text" href="https://www.stubhub.com/" target="_blank">StubHub</a>
+                  <h3><a class="e-text pop-up-link pop-up-link" data-position="0 0" href="https://www.stubhub.com/" target="_blank">StubHub</a>
                   </h3>
                   <p class="list-image">
-                      <a href="https://www.stubhub.com" target="_blank"><img src="./images2/myebay.png" alt="" /></a>
+                      <a href="https://www.stubhub.com" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./entertianmentimg/stubhub-1-638.jpg" alt="" /></a>
                   </p>
                 </div>
 
                 <div class="twoBySix">
-                    <h3><a class="e-text" href="https://www.fandango.com/" target="_blank">Fandango</a>
+                    <h3><a class="e-text pop-up-link pop-up-link" data-position="0 0" href="https://www.fandango.com/" target="_blank">Fandango</a>
                     </h3>
                     <p class="list-image">
-                        <a href="https://www.fandango.com/" target="_blank"><img src="./shoppingimg/target.png" alt="" /></a>
+                        <a href="https://www.fandango.com/" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./entertianmentimg/fandango_icon_detail.jpg" alt="" /></a>
                     </p>
                   </div>
 
                    <div class="twoBySix">
-                      <h3><a class="e-text" href="https://www.google.com/search?source=hp&ei=WVqjXMa4IvGMggfQ_YDgAQ&q=movies+near+me" target="_blank">Movies Near Me</a>
+                      <h3><a class="e-text pop-up-link pop-up-link" data-position="0 0" href="https://www.google.com/search?source=hp&ei=WVqjXMa4IvGMggfQ_YDgAQ&q=movies+near+me" target="_blank">Movies Near Me</a>
                       </h3>
                       <p class="list-image">
-                          <a href="https://www.google.com/search?source=hp&ei=WVqjXMa4IvGMggfQ_YDgAQ&q=movies+near+me" target="_blank"><img src="./shoppingimg/costco.jpg" alt="" /></a>
+                          <a href="https://www.google.com/search?source=hp&ei=WVqjXMa4IvGMggfQ_YDgAQ&q=movies+near+me" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./entertianmentimg/movietheatre.jpg" alt="" /></a>
                       </p>
                     </div>
 
                     <div class="twoBySix">
-                        <h3><a class="e-text" href="https://www.songkick.com/" target="_blank">Find Concerts</a>
+                        <h3><a class="e-text pop-up-link pop-up-link" data-position="0 0" href="https://www.songkick.com/" target="_blank">Find Concerts</a>
                         </h3>
                         <p class="list-image">
-                            <a href="https://www.songkick.com/" target="_blank"><img src="./shoppingimg/kohls.jpg" alt="" /></a>
+                            <a href="https://www.songkick.com/" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./entertianmentimg/concerts.jpg" alt="" /></a>
                         </p>
                       </div>
 
                       <div class="twoBySix">
-                          <h3><a class="e-text" href="https://www.jambase.com/shows" target="_blank">Local Live Music Venues</a>
+                          <h3><a class="e-text pop-up-link pop-up-link" data-position="0 0" href="https://www.jambase.com/shows" target="_blank">Local Live Music Venues</a>
                           </h3>
                           <p class="list-image">
-                              <a href="https://www.jambase.com/shows" target="_blank"><img src="./shoppingimg/sears.jpg" alt="" /></a>
+                              <a href="https://www.jambase.com/shows" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./entertianmentimg/jambase.png" alt="" /></a>
                           </p>
                         </div>
 
                         <div class="twoBySix">
-                            <h3><a class="e-text" href="https://www.livenation.com/" target="_blank">Live Nation</a>
+                            <h3><a class="e-text pop-up-link pop-up-link" data-position="0 0" href="https://www.livenation.com/" target="_blank">Live Nation</a>
                             </h3>
                             <p class="list-image">
-                                <a href="https://www.livenation.com/" target="_blank"><img src="./shoppingimg/walmart.jpg" alt="" /></a>
+                                <a href="https://www.livenation.com/" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./entertianmentimg/livenation1.jpg" alt="" /></a>
                             </p>
                           </div>
 
                       <div class="twoBySix">
-                          <h3><a class="e-text" href="https://eventful.com/events/categories/performing_arts" target="_blank">Local Performance Events</a>
+                          <h3><a class="e-text pop-up-link pop-up-link" data-position="0 0" href="https://eventful.com/events/categories/performing_arts" target="_blank">Local Performance Events</a>
                           </h3>
                           <p class="list-image">
-                              <a href="https://eventful.com/events/categories/performing_arts" target="_blank"><img src="./shoppingimg/bestbuy.jpg" alt="" /></a>
+                              <a href="https://eventful.com/events/categories/performing_arts" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./entertianmentimg/eventful.jpg" alt="" /></a>
                           </p>
                         </div>
 
                           <div class="twoBySix">
-                              <h3><a class="e-text" href="https://www.groupon.com/local/theater-and-shows" target="_blank">Groupon</a>
+                              <h3><a class="e-text pop-up-link pop-up-link" data-position="0 0" href="https://www.groupon.com/local/theater-and-shows" target="_blank">Groupon</a>
                               </h3>
                               <p class="list-image">
-                                  <a href="https://www.groupon.com/local/theater-and-shows" target="_blank"><img src="./shoppingimg/lowes.jpg" alt="" /></a>
+                                  <a href="https://www.groupon.com/local/theater-and-shows" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./shoppingimg/groupon.jpg" alt="" /></a>
                               </p>
                             </div>
 
                             <div class="twoBySix">
-                                <h3><a class="e-text" href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=comedy+near+me" target="_blank">Comedy Near Me</a>
+                                <h3><a class="e-text pop-up-link pop-up-link" data-position="0 0" href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=comedy+near+me" target="_blank">Comedy Near Me</a>
                                 </h3>
                                 <p class="list-image">
-                                    <a href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=comedy+near+me" target="_blank"><img src="./shoppingimg/homedepot.png" alt="" /></a>
+                                    <a href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=comedy+near+me" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./entertianmentimg/StandUpComedy-1.jpg" alt="" /></a>
                                 </p>
                               </div>
 
                               <div class="twoBySix">
-                                  <h3><a class="e-text" href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=parks+near+me" target="_blank">Parks Near Me</a>
+                                  <h3><a class="e-text pop-up-link pop-up-link" data-position="0 0" href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=parks+near+me" target="_blank">Parks Near Me</a>
                                   </h3>
                                   <p class="list-image">
-                                      <a href="https://www.google.com/search?biw=1436&bih=780&ei=kGOjXMmAIee8ggfUvITAAw&q=parks+near+me" target="_blank"><img src="./shoppingimg/alibaba2.jpg" alt="" /></a>
+                                      <a href="https://www.google.com/search?biw=1436&bih=780&ei=kGOjXMmAIee8ggfUvITAAw&q=parks+near+me" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./entertianmentimg/parks.jpg" alt="" /></a>
                                   </p>
                                 </div>
     
                                 <div class="twoBySix">
-                                    <h3><a class="e-text" href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=aquariums+near+me" target="_blank">Aquariums</a>
+                                    <h3><a class="e-text pop-up-link pop-up-link" data-position="0 0" href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=aquariums+near+me" target="_blank">Aquariums Near Me</a>
                                     </h3>
                                     <p class="list-image">
-                                        <a href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=aquariums+near+me" target="_blank"><img src="./shoppingimg/dicks.png" alt="" /></a>
+                                        <a href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=aquariums+near+me" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./entertianmentimg/aquarium.jpg" alt="" /></a>
                                     </p>
                                   </div>
 
                                   <div class="twoBySix">
-                                      <h3><a class="e-text" href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=museums+near+me" target="_blank">Museums</a>
+                                      <h3><a class="e-text pop-up-link pop-up-link" data-position="0 0" href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=museums+near+me" target="_blank">Museums Near Me</a>
                                       </h3>
                                       <p class="list-image">
-                                        <a href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=museums+near+me" target="_blank"><img src="./shoppingimg/macys.png" alt=""></a>
+                                        <a href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=museums+near+me" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./entertianmentimg/museum.jpg" alt=""></a>
                                       </p>
                                     </div>
                         
                                     <div class="profile-text-block-3 twoBySix">
-                                      <h3><a class="e-text" href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=zoos+near+me" target="_blank">Animal Attractions</a></h3>
+                                      <h3><a class="e-text pop-up-link pop-up-link" data-position="0 0" href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=zoos+near+me" target="_blank">Animal Attractions</a></h3>
                                       <p class="list-image">
-                                          <a href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=zoos+near+me" target="_blank"><img src="./shoppingimg/walgreens.png" alt="" /></a>
+                                          <a href="https://www.google.com/search?biw=1436&bih=780&ei=jF6jXN60NOG0ggfn6riYBw&q=zoos+near+me" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./entertianmentimg/zoo.jpeg" alt="" /></a>
                                       </p>
                                     </div>
                           </div>
@@ -237,14 +242,13 @@
           </div>
 
           <div class="right-side-profileContent">
+
               <div id="itemsOfInterest">
-                  <a href="https://www.indeed.com/" target="_blank"><img src="./images2/indeed1.png" alt="" /></a>
+                  <a href="https://www.google.com/search?q=restaurants+near+me&oq=restaurants+near+me" target="_blank"><img src="./images2/restaurants.png" alt="" /></a>
                 </div>
+
                 <div id="itemsOfInterest">
-                  <a href="https://www.ziprecruiter.com/" target="_blank"><img src="./images2/zipR.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.careerbuilder.com" target="_blank"><img src="./images2/careerbuild.png" alt="" /></a>
+                  <a href="https://www.trycaviar.com/" target="_blank"><img src="./shoppingimg/caviardelivery.png" alt="" /></a>
                 </div>
                 <div id="itemsOfInterest">
                   <a href="https://www.google.com/maps/" target="_blank"><img src="./images2/map1direct.png" alt="" /></a>
@@ -263,9 +267,6 @@
                 </div>
                 <div id="itemsOfInterest">
                   <a href="https://www.hotels.com" target="_blank"><img src="./images2/hotels1.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.google.com/search?q=restaurants+near+me&oq=restaurants+near+me&aqs=chrome..69i57.3408j0j4&sourceid=chrome&ie=UTF-8" target="_blank"><img src="./images2/restaurants.png" alt="" /></a>
                 </div>
                 <div id="itemsOfInterest">
                   <a href="https://www.priceline.com/" target="_blank"><img src="./images2/priceline.png" alt="" /></a>
@@ -287,13 +288,16 @@
 
       <div class="videos-container images-bottom-container profile-text-block-3">
           <div class="flex space-around">
-            <!--<img src="images/logo1a11.png" /> alt + shift + arrow top bottom-->
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
-          </div>
+              <!--<img src="images/logo1a11.png" /> alt + shift + arrow top bottom-->
+              <a href="https://www.google.com/search?biw=1437&bih=731&ei=PeSkXNHkBuOhggfLl7mgBA&q=painball+near+me&oq=painball+near+me" target="_blank"><img src="./entertianmentimg/paintball.jpg" alt="" /></a>
+
+              <a href="https://www.si.com/scoreboard" target="_blank"><img src="./images/scores.jpg" alt="" /></a>  
+
+              <a href="https://https://www.google.com/search?hl=en&ei=FNSkXJPHDqjv_QbjqbCIAg&q=weather+near+me&oq=weather+near+me&gs_l=psy-ab.3..35i39l2j0l8.3068.3980..4301...0.0..0.312.1243.2j0j3j1......0....1..gws-wiz.......0i71.66EzYxx_NzM" target="_blank"><img src="./images/weather.png" alt="" /></a>
+
+              <a href="https://www.google.com/search?hl=en&ei=GdSkXILbIOm9ggfQnoCoAw&q=traffic+near+me&oq=traffic+near+me&gs_l=psy-ab.3..35i39j0i7i30l9.23091.25026..25828...0.0..0.158.819.2j5......0....1..gws-wiz.......0i71j35i304i39.zP6gv7h_Zy0" target="_blank"><img src="./images/traffic.jpg" alt="" /></a>           
+              <a href="https://www.astrology.com/horoscope/daily.html" target="_blank"><img src="./images/horoscopes.jpg" alt="" /></a>          
+            </div>
         </div>
         <div class="videos-container images-bottom-container profile-text-block-3">
         <div class="accountDel">
@@ -327,7 +331,7 @@
 
             <div class="column4-footer">
                 <form>
-                    <a href="#">Inquire</a>
+                    <a href="#">Inquire<img class="footer-mail" src="images/mail-envelope-icon.png"/></a>
                 </form>
             </div>
         </div>

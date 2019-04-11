@@ -36,7 +36,7 @@
           <!-- <img src="images/Logo2a2.jpg" class="logo2" /> -->
           <a href="/public/sports.html" id="how-it-works" style="text-decoration:none" class="howitworks"><i
               class="far fa-eye"></i>
-            Reset</a>
+              Reset - Reload</a>
         </div>
         <nav class="nav-list">
           <ul class="mainNav">
@@ -72,14 +72,20 @@
           <div class="profile-user-id">. . . Hello again, <span id="user-name"></span> &nbsp;:) </div>
         </div>
       </div>
-      <div class="searchBar">
-        <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" class="b-text pop-up-link" target="_blank">
-          <input name="sitesearch" type="hidden" value="">
-          <input autocomplete="on" class="form-control search" name="q" placeholder="Search the web for . . . "
-            required="required" type="text">
-          <button class="button-search" type="submit">Search</button>
-        </form>
-      </div>
+      <div class="searchBars">
+
+          <div class="searchBar">
+              <form action="https://www.google.com/search" class="searchform searchweb" method="get" name="searchform" target="_blank">
+                <input name="sitesearch" type="hidden" value="">
+                <input class="extra-params" type="hidden" value="">
+                <input autocomplete="on" class="form-control search" name="q" placeholder="Search the web for . . . "
+                  required="required" type="text">
+                <button class="button-search" type="submit">Search</button>
+                <span class="or-separator">or</span>
+                <button class="button-search near-me" type="submit">Search near me</button>
+              </form>
+            </div>
+        </div>
 
       <!-- <div class="pro-tools">Pro-Tools</div> -->
       <!-- <div class="services-title"></div> -->
@@ -97,9 +103,9 @@
       <button class="removePic" id="removePic">Remove</button>
 
 
-      <div class="profile-image-block3 twoBySix auto-height">
-          <img src="/public/images2/gmail.png" class="full-width"> 
-          <img src="/public/images2/calendar.png" class="full-width">
+      <div class="calendar-email profile-image-block3 twoBySix auto-height">
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"> <img src="/public/images2/gmail.png" class="full-width"> </a>
+          <a href="https://calendar.google.com/calendar/r?tab=rc&pli=1" target="_blank"><img src="/public/images2/calendar.png" class="full-width"></a>
       </div>
     </div>
       
@@ -108,14 +114,14 @@
         <div class="left-side-profileContainer">
 
           <!-- Top navigation / header -->
-          <div class="navigation-links curved-header-b">
+          <div class="navigation-links-sports curved-header-b">
               <a href="/public/profilepage.html">Main</a>
+              <a href="/public/shopping.html">My Shopping</a>
               <a href="/public/news.html">My News/ Weather</a>
               <a href="/public/sports.html">My Sports</a>
               <a href="/public/finance.html">My Finance-RE</a>
               <a href="/public/entertainment.html">My Entertainment</a>
               <a href="/public/travel.html">My Travel</a>
-              <a href="/public/shopping.html">My Shopping</a>
             </div>
 
 
@@ -182,10 +188,10 @@
                     </div>
 
                     <div class="twoBySix">
-                        <h3><a href="https://www.nascar.com" class="b-text pop-up-link" target="_blank">UFC</a>
+                        <h3><a href="https://www.ufc.com" class="b-text pop-up-link" target="_blank">UFC</a>
                         </h3>
                         <p class="list-image">
-                          <a href="https://www.nascar.com" class="b-text pop-up-link" target="_blank"><img src="./sportsimg/ufc.png" alt=""></a>
+                          <a href="https://www.ufc.com" class="b-text pop-up-link" target="_blank"><img src="./sportsimg/ufc.png" alt=""></a>
                         </p>
                       </div>
 
@@ -235,13 +241,25 @@
 
           <div class="right-side-profileContent">
               <div id="itemsOfInterest">
+                  <a href="https://www.stubhub.com" target="_blank"><img src="./entertianmentimg/stubhub-1-638.jpg" alt="" /></a>
+                </div>
+                <div id="itemsOfInterest">
+                    <a href="https://www.ticketmaster.com" target="_blank"><img src="./entertianmentimg/ticketmaster.png" alt="" /></a>
+                  </div>
+              <div id="itemsOfInterest">
+                  <a href="https://www.payperview.com/" target="_blank"><img src="./sportsimg/ppv.jpg" alt="" /></a>
+                </div>
+                <div id="itemsOfInterest">
+                    <a href="https://www.ufc.tv/" target="_blank"><img src="./sportsimg/ufc-pass.png" alt="" /></a>
+                  </div>
+                  <div id="itemsOfInterest">
+                      <a href="https://www.doordash.com/" target="_blank"><img src="./images2/doordash.png" alt="" /></a>
+                    </div>
+                  <div id="itemsOfInterest">
+                      <a href="https://www.hotels.com" target="_blank"><img src="./images2/hotels1.png" alt="" /></a>
+                    </div>
+              <div id="itemsOfInterest">
                   <a href="https://www.indeed.com/" target="_blank"><img src="./images2/indeed1.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.ziprecruiter.com/" target="_blank"><img src="./images2/zipR.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.careerbuilder.com" target="_blank"><img src="./images2/careerbuild.png" alt="" /></a>
                 </div>
                 <div id="itemsOfInterest">
                   <a href="https://www.google.com/maps/" target="_blank"><img src="./images2/map1direct.png" alt="" /></a>
@@ -253,13 +271,7 @@
                   <a href="https://www.apartments.com/" target="_blank"><img src="./images2/aoartments.png" alt="" /></a>
                 </div>
                 <div id="itemsOfInterest">
-                  <a href="https://studentaid.ed.gov/sa/fafsa" target="_blank"><img src="./images2/fasfa.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
                   <a href="https://www.budget.com/en/reservation/make-reservation" target="_blank"><img src="./images2/carrent.jpg" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.hotels.com" target="_blank"><img src="./images2/hotels1.png" alt="" /></a>
                 </div>
                 <div id="itemsOfInterest">
                   <a href="https://www.google.com/search?q=restaurants+near+me&oq=restaurants+near+me&aqs=chrome..69i57.3408j0j4&sourceid=chrome&ie=UTF-8" target="_blank"><img src="./images2/restaurants.png" alt="" /></a>
@@ -267,12 +279,6 @@
                 <div id="itemsOfInterest">
                   <a href="https://www.priceline.com/" target="_blank"><img src="./images2/priceline.png" alt="" /></a>
                 </div>
-                <div id="itemsOfInterest">
-                    <a href="https://www.hrblock.com/" target="_blank"><img src="./images2/hrblock.png" alt="" /></a>
-                  </div>
-                <div id="itemsOfInterest">
-                    <a href="https://www.doordash.com/" target="_blank"><img src="./images2/doordash.png" alt="" /></a>
-                  </div>
                 <div id="itemsOfInterest">
                     <a href="https://www.cars.com/" target="_blank"><img src="./images2/carscom.png" alt="" /></a>
                   </div>
@@ -296,13 +302,13 @@
     
     <div class="videos-container images-bottom-container profile-text-block-3">
         <div class="flex space-around">
-          <!--<img src="images/logo1a11.png" /> alt + shift + arrow top bottom-->
-          <img src="images/logo1a11.png" />
-          <img src="images/logo1a11.png" />
-          <img src="images/logo1a11.png" />
-          <img src="images/logo1a11.png" />
-          <img src="images/logo1a11.png" />
-        </div>
+            <!--<img src="images/logo1a11.png" /> alt + shift + arrow top bottom-->
+            <a href="https://www.google.com/search?hl=en&source=hp&ei=L9KkXPz-BYa0ggfmpqDoDQ&q=news&btnK=Google+Search&oq=news&gs_l=psy-ab.3..35i39j0i131i67j0i67l2j0i131j0j0i20i263j0j0i131j0i131i67.4676.5100..5229...1.0..0.154.574.0j5......0....1..gws-wiz.....6.JVB9F8rxMDI" target="_blank"><img src="./images/topstories-300x225.jpg" alt="" /></a>
+            <a href="https://www.si.com/scoreboard" target="_blank"><img src="./images/scores.jpg" alt="" /></a>            
+            <a href="https://https://www.google.com/search?hl=en&ei=FNSkXJPHDqjv_QbjqbCIAg&q=weather+near+me&oq=weather+near+me&gs_l=psy-ab.3..35i39l2j0l8.3068.3980..4301...0.0..0.312.1243.2j0j3j1......0....1..gws-wiz.......0i71.66EzYxx_NzM" target="_blank"><img src="./images/weather.png" alt="" /></a>
+            <a href="https://www.google.com/search?hl=en&ei=GdSkXILbIOm9ggfQnoCoAw&q=traffic+near+me&oq=traffic+near+me&gs_l=psy-ab.3..35i39j0i7i30l9.23091.25026..25828...0.0..0.158.819.2j5......0....1..gws-wiz.......0i71j35i304i39.zP6gv7h_Zy0" target="_blank"><img src="./images/traffic.jpg" alt="" /></a>           
+            <a href="https://www.astrology.com/horoscope/daily.html" target="_blank"><img src="./images/horoscopes.jpg" alt="" /></a>     
+          </div>
       </div>
       <div class="videos-container images-bottom-container profile-text-block-3">
       <div class="accountDel">
@@ -336,7 +342,7 @@
 
                 <div class="column4-footer">
                     <form>
-                        <a href="#">Inquire</a>
+                        <a href="#">Inquire<img class="footer-mail" src="images/mail-envelope-icon.png"/></a>
                     </form>
                 </div>
             </div>
@@ -482,6 +488,7 @@
       }
     </script>
     <script src="index.js"></script>
+    <script src="log-direct.js"></script>
   </div>
   </div>
 </body>

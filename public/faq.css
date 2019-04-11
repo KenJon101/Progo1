@@ -1,0 +1,67 @@
+.signup2{
+background-color: rgb(250, 245, 239);
+}
+
+.faqs {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.faqs .faq {
+  background: white;
+  margin-bottom: 20px;
+  color: rgb(32, 69, 138);
+  padding: 5px 10px;
+  border: 1px solid rgb(223, 223, 240);
+  border-radius: 3px;
+}
+
+.faq .question {
+  position: relative;
+  padding-right: 120px;
+}
+
+.faq .question::after {
+  content: 'Answer';
+  position: absolute;
+  background: rgb(63, 199, 136);
+  top: 0;
+  right: 20px;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.faq .answer {
+  display: none;
+  border-top: 1px solid green;
+}
+
+.site-footer {
+  background-color: #348681;
+  /* background-color: rgba(0, 68, 124, 0.952); */
+  background-image: url("images/logo1a11.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 10%;
+  font-size: 14px;
+  font-weight: 500;
+  /* background-color: red; */
+  color: white;
+  /* color: #004e81; */
+  padding: 10px;
+  margin-top: 30px;
+  border-top: solid rgba(1, 128, 187, 0.425) 1px;
+  padding: 30px 15%;
+  box-shadow: 1px 1px 4px 3px rgb(112, 123, 138);
+}
+
+.Faq-title2{
+  color: rgb(32, 69, 138);
+  margin-bottom: 40px;
+}
+
+.back-to-top{
+  color: #348681;
+}

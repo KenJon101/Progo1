@@ -1,0 +1,111 @@
+body {
+  background: rgb(26, 81, 141);
+  text-align: center;
+}
+
+#signup-logo {
+  margin-top: 3.4%;
+  border-radius: 50%;
+  background: rgb(26, 81, 141);
+  width: 220px;
+  transition: .3s all;
+}
+
+#signup-logo1{
+  margin-top: 3.4%;
+  border-radius: 50%;
+  background: rgb(26, 81, 141);
+  width: 0px;
+  transition: .3s all;
+
+}
+
+#signup-logo.small {
+  width: 240px;
+  /* margin-top: 55px; */
+}
+
+header {
+  /*background: url(/images/project-main-logo.jpg) no-repeat;
+  background-size: contain;
+  background-position: center;*/
+}
+
+.body-overlay2 {
+  color: white;
+}
+
+#phone-verify-text{
+  margin-top: 2%;
+}
+
+input {
+  text-align: center;
+  padding: 0px 5px;
+}
+
+/* modal */
+
+.phone-number-fields {
+  text-align: center;
+}
+
+input,
+button {
+  border-radius: 3px;
+  line-height: 30px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+input {
+  width: 30%;
+  margin-top: 10px;
+}
+
+#agree-buttons button.grey {
+  background: grey;
+}
+
+
+/* #profile-modal {
+  width: 52%;
+  margin: 0 auto 0px;
+} */
+
+#termsConditionsSection .terms-and-conditions {
+  height: 50vh;
+  overflow: scroll;
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 3px;
+  margin: 5px 0;
+  color:rgb(0, 33, 63);
+}
+
+#termsConditionsSection{ 
+  /* display: none; */
+  font-size: 12px;
+}
+
+.modal-text{
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+}
+
+#agreeToTermsConditions{
+  margin-left:  300px;
+}
+
+.display-none {
+  display: none;
+}
+
+.modal-agreement {
+  margin-bottom: 15px;
+}
+
+.top-level-terms {
+  padding: 0 2em;
+}

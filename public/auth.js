@@ -99,7 +99,7 @@ async function signIn() {
 
     if (userInFB) {
       // already in firebase
-      window.location.href = '/profilepage.html';
+      window.location.href = '/public/profilepage.html';
     } else {
       // create user in firebase
       let { picture, email, given_name, family_name } = result.additionalUserInfo.profile;
@@ -185,7 +185,7 @@ async function signIn() {
 
 $(document).ready(() => {
 
-  $('#homeLogin, #login').on('click', async (e) => {
+  $('#homeLogin, #login, .start-button').on('click', async (e) => {
     e.preventDefault();
     const authResult = await signIn();
   });
@@ -272,7 +272,7 @@ function logoutUserAndRemoveStoredData() {
   localStorage.removeItem('verified');
   firebase.auth().signOut();
   setTimeout(function () {
-    window.location.href = '/index.html';
+    window.location.href = '/public/index.html';
   }, 10);
 }
 async function deleteMyAccount() {

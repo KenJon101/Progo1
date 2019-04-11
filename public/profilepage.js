@@ -383,13 +383,26 @@ $(document).ready(async () => {
         let recommendedUsers = await getUsersByIds(loggedUser.recommendedUsers);
         displayUsers(recommendedUsers, '#skills-form-container .profile-contact-list');
     }
+
+
+/*    $('form.searchform').on('submit', function(event) {
+        event.preventDefault();
+        var form = $(this);
+        var action = form.attr('action');
+
+        var search = form.find('input.search');
+        var extraParams = form.find('input.extra-params').val();
+        
+        window.open(action + '?q=' + search + ' ' + extraParams, '', 'width=300, height=200');
+        return false;
+    })*/
 });
 
 
 $(window).on('scroll', function () {
     var $elem = $('.profile-box');
     var elemHeight = $elem.height() + 80;
-    var offset = 200 // $elem.offset().top;
+    var offset = 300 // $elem.offset().top;
     var $body = $('.profile-bodyContainer');
     var bodyBottom = $body.height() + $body.offset().top;
     var limit = bodyBottom - (elemHeight + offset);
@@ -398,7 +411,7 @@ $(window).on('scroll', function () {
     if (scroll > limit) {
         $elem.css({
             position: 'absolute',
-            top: limit + offset + 25 + 'px'
+            top: limit + offset - 150 + 'px'
         })
     } else {
         $elem.css({

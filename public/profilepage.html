@@ -36,7 +36,7 @@
           <!-- <img src="images/Logo2a2.jpg" class="logo2" /> -->
           <a href="/public/profilepage.html" id="how-it-works" style="text-decoration:none" class="howitworks"><i
               class="far fa-eye"></i>
-            Reset</a>
+              Reset - Reload</a>
         </div>
         <nav class="nav-list">
           <ul class="mainNav">
@@ -72,14 +72,20 @@
           <div class="profile-user-id">. . . Hello again, <span id="user-name"></span> &nbsp;:) </div>
         </div>
       </div>
-      <div class="searchBar">
-        <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
-          <input name="sitesearch" type="hidden" value="">
-          <input autocomplete="on" class="form-control search" name="q" placeholder="Search the web for . . . "
-            required="required" type="text">
-          <button class="button-search" type="submit">Search</button>
-        </form>
-      </div>
+      <div class="searchBars">
+
+          <div class="searchBar">
+              <form action="https://www.google.com/search" class="searchform searchweb" method="get" name="searchform" target="_blank">
+                <input name="sitesearch" type="hidden" value="">
+                <input class="extra-params" type="hidden" value="">
+                <input autocomplete="on" class="form-control search" name="q" placeholder="Search the web for . . . "
+                  required="required" type="text">
+                <button class="button-search" type="submit">Search</button>
+                <span class="or-separator">or</span>
+                <button class="button-search near-me" type="submit">Search near me</button>
+              </form>
+            </div>
+        </div>
 
       <!-- <div class="pro-tools">Pro-Tools</div> -->
       <!-- <div class="services-title"></div> -->
@@ -109,17 +115,25 @@
 
           <!-- Top navigation / header -->
           <div class="navigation-links curved-header">
-              <a class="a-text pop-up-link pop-up-link" data-position="0 0" href="/public/music.html">My Music</a>
+              <a href="/public/shopping.html">My Shopping</a>
               <a href="/public/news.html">My News/ Weather</a>
               <a href="/public/sports.html">My Sports</a>
               <a href="/public/finance.html">My Finance-RE</a>
               <a href="/public/entertainment.html">My Entertainment</a>
               <a href="/public/travel.html">My Travel</a>
-              <a href="/public/shopping.html">My Shopping</a>
+              <a class="a-text pop-up-link pop-up-link" data-position="0 0" href="/public/music.html">My Music</a>
             </div>
 
 
           <div class="main-grid profile-services-grid">
+
+              <div class="twoBySix">
+                  <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://www.facebook.com" target="_blank">My Facebook</a>
+                  </h3>
+                  <p class="list-image">
+                    <a href="https://www.facebook.com" data-position="200 500" class="a-text pop-up-link" target="_blank"><img src="./images2/facebook.jpg" alt="" /></a>
+                  </p>
+                </div>
 
             <div class="twoBySix">
               <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://mail.google.com/mail/u/0/#inbox" target="_blank">My Mail</a>
@@ -131,101 +145,92 @@
             </div>
 
             <div class="profile-text-block-3 twoBySix">
-              <h3><a class="a-text" href="https://calendar.google.com/calendar/r?tab=rc&pli=1" target="_blank">My Calendar</a></h3>
+              <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://calendar.google.com/calendar/r?tab=rc&pli=1" target="_blank">My Calendar</a></h3>
               <p class="list-image">
-                  <a href="https://calendar.google.com/calendar/r?tab=rc&pli=1" target="_blank"><img src="./images2/calendar.png" alt="" /></a>
+                  <a href="https://calendar.google.com/calendar/r?tab=rc&pli=1" data-position="200 500" class="a-text pop-up-link"  target="_blank"><img src="./images2/calendar.png" alt="" /></a>
               </p>
             </div>
 
             <div class="twoBySix">
-              <h3><a class="a-text" href="https://www.memonotepad.com/" target="_blank">My Notepad</a>
+              <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://www.memonotepad.com/" target="_blank">My Notepad</a>
               </h3>
               <p class="list-image">
-                  <a href="https://www.memonotepad.com/" target="_blank"><img src="./images2/notepad.png" alt="" /></a>
+                  <a href="https://www.memonotepad.com/" data-position="200 500" class="a-text pop-up-link"  target="_blank"><img src="./images2/notepad.png" alt="" /></a>
               </p>
             </div>
 
               <div class="profile-text-block-3 twoBySix">
-                  <h3><a class="a-text" href="https://hangouts.google.com/" target="_blank">Video Chat</a></h3>
+                  <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://hangouts.google.com/" target="_blank">Video Chat</a></h3>
                   <p class="list-image">
-                      <a href="https://hangouts.google.com/" target="_blank"><img src="./images2/videochat.png" alt="" /></a>
+                      <a href="https://hangouts.google.com/" data-position="200 500" class="a-text pop-up-link" target="_blank"><img src="./images2/videochat.png" alt="" /></a>
                   </p>
                 </div>
 
                 <div class="profile-text-block-3 twoBySix">
-                    <h3><a class="a-text" href="https://app.resumegenius.com/resume-builder/start" target="_blank">My Resume Builder</a></h3>
+                    <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://www.twitter.com" target="_blank">My Twitter</a></h3>
                     <p class="list-image">
-                        <a href="https://app.resumegenius.com/resume-builder/start" target="_blank"><img src="./images2/resume.png" alt="" /></a>
+                        <a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://www.twitter.com" target="_blank"><img src="./images2/twitter.jpg" alt="" /></a>
+                    </p>
+                  </div>
+
+                <div class="profile-text-block-3 twoBySix">
+                    <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://app.resumegenius.com/resume-builder/start" target="_blank">My Resume Builder</a></h3>
+                    <p class="list-image">
+                        <a href="https://app.resumegenius.com/resume-builder/start" data-position="200 500" class="a-text pop-up-link" target="_blank"><img src="./images2/resume.png" alt="" /></a>
                     </p>
                   </div>
 
             <div class="profile-text-block-3 twoBySix">
-              <h3><a class="a-text" href="https://www.calculator.com/" target="_blank">My Calculator</a></h3>
+              <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://www.desmos.com/scientific/" target="_blank">My Calculator</a></h3>
               <p class="list-image">
-                  <a href="https://www.calculator.com/" target="_blank"><img src="./images2/calculator.png" alt="" /></a>
+                  <a href="https://www.desmos.com/scientific/" data-position="200 500" class="a-text pop-up-link" target="_blank"><img src="./images2/calculator.png" alt="" /></a>
               </p>
             </div>
-
+            
             <div class="twoBySix">
-              <h3><a class="a-text" href="https://craigslist.org/" target="_blank">My Craigslist</a>
-              </h3>
-              <p class="list-image">
-                  <a href="https://craigslist.org/" target="_blank"><img src="./images2/craigslist.jpg" alt="" /></a>
-              </p>
-            </div>
-
-            <div class="profile-text-block-3 twoBySix">
-              <h3><a class="a-text" href="https://www.nerdwallet.com/blog/loans/student-loans/student-loan-calculator/" target="_blank">My Student Loan Calculator</a></h3>
-              <p class="list-image">
-                  <a href="https://www.nerdwallet.com/blog/loans/student-loans/student-loan-calculator/" target="_blank"><img src="./images2/studentloancalc.png" alt="" /></a>
-              </p>
-            </div>
-
-            <div class="twoBySix">
-              <h3><a class="a-text" href="https://www.facebook.com" target="_blank">My Facebook</a>
-              </h3>
-              <p class="list-image">
-                <a href="https://www.facebook.com" target="_blank"><img src="./images2/facebook.jpg" alt="" /></a>
-              </p>
-            </div>
-
-            <div class="twoBySix">
-                <h3><a class="a-text" href="https://www.mortgagecalculator.org/" target="_blank">My Mortgage Calculator</a>
+                <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://docs.google.com/document/u/0/" target="_blank">Google Docs</a>
                 </h3>
                 <p class="list-image">
-                    <a href="https://www.mortgagecalculator.org/" target="_blank"><img src="./images2/mortgagecalc.png" alt="" /></a>
+                    <a href="https://docs.google.com/document/u/0/" data-position="200 500" class="a-text pop-up-link" target="_blank"><img src="./images/googledocs.jpg" alt="" /></a>
                 </p>
               </div>
-
-            <div class="profile-text-block-3 twoBySix">
-              <h3><a class="a-text" href="https://www.twitter.com" target="_blank">My Twitter</a></h3>
+            <div class="twoBySix">
+              <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://craigslist.org/" target="_blank">My Craigslist</a>
+              </h3>
               <p class="list-image">
-                  <a class="a-text" href="https://www.twitter.com" target="_blank"><img src="./images2/twitter.jpg" alt="" /></a>
+                  <a href="https://craigslist.org/" data-position="200 500" class="a-text pop-up-link" target="_blank"><img src="./images2/craigslist.jpg" alt="" /></a>
               </p>
             </div>
+
+            <div class="profile-text-block-3 twoBySix">
+              <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://www.nerdwallet.com/blog/loans/student-loans/student-loan-calculator/" target="_blank">My Student Loan Calculator</a></h3>
+              <p class="list-image">
+                  <a href="https://www.nerdwallet.com/blog/loans/student-loans/student-loan-calculator/" data-position="200 500" class="a-text pop-up-link" target="_blank"><img src="./images2/studentloancalc.png" alt="" /></a>
+              </p>
+            </div>
+
+            <div class="twoBySix">
+                <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://www.mortgagecalculator.org/" target="_blank">My Mortgage Calculator</a>
+                </h3>
+                <p class="list-image">
+                    <a href="https://www.mortgagecalculator.org/" data-position="200 500" class="a-text pop-up-link" target="_blank"><img src="./images2/mortgagecalc.png" alt="" /></a>
+                </p>
+              </div>
   
               <div class="profile-text-block-3 twoBySix">
-                <h3><a class="a-text" href="https://www.cars.com/car-loan-calculator/" target="_blank">My Car Loan Calculator</a></h3>
+                <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://www.cars.com/car-loan-calculator/" target="_blank">My Car Loan Calculator</a></h3>
                 <p class="list-image">
-                    <a href="https://www.cars.com/car-loan-calculator/" target="_blank"><img src="./images2/carloancalc.png" alt="" /></a>
+                    <a href="https://www.cars.com/car-loan-calculator/" data-position="200 500" class="a-text pop-up-link" target="_blank"><img src="./images2/carloancalc.png" alt="" /></a>
                 </p>
               </div>
 
               <div class="twoBySix">
-                  <h3><a class="a-text" href="https://www.ebay.com/" target="_blank">My Ebay</a>
+                  <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://www.ebay.com/" target="_blank">My Ebay</a>
                   </h3>
                   <p class="list-image">
-                      <a href="https://www.ebay.com" target="_blank"><img src="./images2/myebay.png" alt="" /></a>
+                      <a href="https://www.ebay.com" data-position="200 500" class="a-text pop-up-link" target="_blank"><img src="./images2/myebay.png" alt="" /></a>
                   </p>
                 </div>
-
-                <div class="twoBySix">
-                    <h3><a class="a-text" href="https://www.marketwatch.com/investing/stock/live" target="_blank">My Market Watch</a>
-                    </h3>
-                    <p class="list-image">
-                        <a href="https://www.marketwatch.com/investing/stock/live" target="_blank"><img src="./images2/stockmark.jpg" alt="" /></a>
-                    </p>
-                  </div>
 
             <!-- <div class="profile-image-block4 twoBySix">
               <h3><a href="" target="_blank">test</a></h3>
@@ -290,11 +295,11 @@
       <div class="videos-container images-bottom-container profile-text-block-3">
           <div class="flex space-around">
             <!--<img src="images/logo1a11.png" /> alt + shift + arrow top bottom-->
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
+            <a href="https://www.google.com/search?hl=en&source=hp&ei=L9KkXPz-BYa0ggfmpqDoDQ&q=news&btnK=Google+Search&oq=news&gs_l=psy-ab.3..35i39j0i131i67j0i67l2j0i131j0j0i20i263j0j0i131j0i131i67.4676.5100..5229...1.0..0.154.574.0j5......0....1..gws-wiz.....6.JVB9F8rxMDI" target="_blank"><img src="./images/topstories-300x225.jpg" alt="" /></a>
+            <a href="https://www.si.com/scoreboard" target="_blank"><img src="./images/scores.jpg" alt="" /></a>            
+            <a href="https://www.google.com/search?hl=en&ei=FNSkXJPHDqjv_QbjqbCIAg&q=weather+near+me&oq=weather+near+me&gs_l=psy-ab.3..35i39l2j0l8.3068.3980..4301...0.0..0.312.1243.2j0j3j1......0....1..gws-wiz.......0i71.66EzYxx_NzM" target="_blank"><img src="./images/weather.png" alt="" /></a>
+            <a href="https://www.google.com/search?hl=en&ei=GdSkXILbIOm9ggfQnoCoAw&q=traffic+near+me&oq=traffic+near+me&gs_l=psy-ab.3..35i39j0i7i30l9.23091.25026..25828...0.0..0.158.819.2j5......0....1..gws-wiz.......0i71j35i304i39.zP6gv7h_Zy0" target="_blank"><img src="./images/traffic.jpg" alt="" /></a>           
+            <a href="https://www.astrology.com/horoscope/daily.html" target="_blank"><img src="./images/horoscopes.jpg" alt="" /></a>     
           </div>
         </div>
         <div class="videos-container images-bottom-container profile-text-block-3">
@@ -329,7 +334,7 @@
 
             <div class="column4-footer">
                 <form>
-                    <a href="#">Inquire</a>
+                    <a href="#">Inquire<img class="footer-mail" src="images/mail-envelope-icon.png" /></a>
                 </form>
             </div>
         </div>
@@ -386,15 +391,6 @@
     <script src="profilepage.js"></script>
 
     <div id="tabs-video-container">
-    
-    <script>
-      $(document).ready(async function () {
-        let userObj = await getUser();
-        if (!userObj || userObj.verified !== 1) {
-          window.location.href = '/';
-        }
-      });
-    </script>
 
     <!-- <script>
       // 2. This code loads the IFrame Player API code asynchronously.
@@ -486,6 +482,7 @@
     </div>
 
     <script src="index.js"></script>
+    <script src="log-direct.js"></script>
   </div>
   </div>
 </body>

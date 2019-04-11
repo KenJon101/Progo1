@@ -36,7 +36,7 @@
           <!-- <img src="images/Logo2a2.jpg" class="logo2" /> -->
           <a href="/public/news.html" id="how-it-works" style="text-decoration:none" class="howitworks"><i
               class="far fa-eye"></i>
-            Reset</a>
+              Reset - Reload</a>
         </div>
         <nav class="nav-list">
           <ul class="mainNav">
@@ -72,14 +72,43 @@
           <div class="profile-user-id">. . . Hello again, <span id="user-name"></span> &nbsp;:) </div>
         </div>
       </div>
-      <div class="searchBar">
-        <form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
-          <input name="sitesearch" type="hidden" value="">
-          <input autocomplete="on" class="form-control search" name="q" placeholder="Search the web for . . . "
-            required="required" type="text">
-          <button class="button-search" type="submit">Search</button>
-        </form>
-      </div>
+      <div class="searchBars">
+
+          <div class="searchBar">
+              <form action="https://www.google.com/search" class="searchform searchweb" method="get" name="searchform" target="_blank">
+                <input name="sitesearch" type="hidden" value="">
+                <input class="extra-params" type="hidden" value="">
+                <input autocomplete="on" class="form-control search" name="q" placeholder="Search the web for . . . "
+                  required="required" type="text">
+                <button class="button-search" type="submit">Search</button>
+                <span class="or-separator">or</span>
+                <button class="button-search near-me" type="submit">Search near me</button>
+              </form>
+            </div>
+        </div>
+  <!--
+                <script>
+                    (function() {
+                      var cx = '005320503541745354066:ezzd-1su1zm';
+                      var gcse = document.createElement('script');
+                      gcse.type = 'text/javascript';
+                      gcse.async = true;
+                      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                      var s = document.getElementsByTagName('script')[0];
+                      s.parentNode.insertBefore(gcse, s);
+                    })();
+                  </script>
+                  <gcse:search></gcse:search>-->
+        <!--<div class="searchBar">
+            <form action="https://www.google.com/search" class="searchform searchweb" method="get" name="searchform" target="_blank">
+              <input name="sitesearch" type="hidden" value="">
+              <input class="extra-params" type="hidden" value="near me">
+              <input autocomplete="on" class="form-control search" name="q" placeholder="Search NEAR ME for . . . "
+                required="required" type="text">
+                <button class="button-search" type="submit">Search Near Me</button>
+            </form>
+          </div>-->
+      
 
       <!-- <div class="pro-tools">Pro-Tools</div> -->
       <!-- <div class="services-title"></div> -->
@@ -96,9 +125,9 @@
       <button class="removePic" id="removePic">Remove</button>
 
 
-      <div class="profile-image-block3 twoBySix auto-height">
-          <img src="/public/images2/gmail.png" class="full-width"> 
-          <img src="/public/images2/calendar.png" class="full-width">
+      <div class="calendar-email profile-image-block3 twoBySix auto-height">
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"> <img src="/public/images2/gmail.png" class="full-width"> </a>
+          <a href="https://calendar.google.com/calendar/r?tab=rc&pli=1" target="_blank"><img src="/public/images2/calendar.png" class="full-width"></a>
       </div>
     </div>
 
@@ -110,22 +139,22 @@
           <!-- Top navigation / header -->
           <div class="navigation-links-n curved-header-n">
               <a href="/public/profilepage.html">Main</a>
+              <a href="/public/shopping.html">My Shopping</a>
               <a href="/public/news.html">My News/ Weather</a>
               <a href="/public/sports.html">My Sports</a>
               <a href="/public/finance.html">My Finance-RE</a>
               <a href="/public/entertainment.html">My Entertainment</a>
               <a href="/public/travel.html">My Travel</a>
-              <a href="/public/shopping.html">My Shopping</a>
             </div>
 
 
-          <div class="main-grid profile-services-grid-news">
+          <div class="main-grid profile-services-grid-news bg-black">
 
               <div class="twoBySix">
                   <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://www.bbc.com/news/world" target="_blank">BBC News</a>
                   </h3>
                   <p class="list-image">
-                    <a href="https://www.bbc.com/news/world" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./newsimg/bbcworldnews.png" alt=""></a>
+                    <a href="https://www.bbc.com/news/world" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./newsimg/bbcnews.jpg" alt=""></a>
                   </p>
                 </div>
     
@@ -137,7 +166,7 @@
                 </div>
     
                 <div class="twoBySix">
-                    <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="http://www.freeintertv.com/view/id-3324/USA-1-2-1?chname=live&findch=1" target="_blank">CNN</a>
+                    <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" data-size="small" href="http://www.freeintertv.com/view/id-3324/USA-1-2-1?chname=live&findch=1" target="_blank">CNN</a>
                     </h3>
                     <p class="list-image">
                       <a href="http://www.freeintertv.com/view/id-3324/USA-1-2-1?chname=live&findch=1" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./newsimg/cnn.png" alt=""></a>
@@ -168,7 +197,7 @@
                         </div>
 
                       <div class="profile-text-block-3 twoBySix">
-                          <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://www.reuters.com" target="_blank">Rueters</a></h3>
+                          <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://www.reuters.com" target="_blank">Reuters</a></h3>
                           <p class="list-image">
                               <a href="https://www.reuters.com" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./newsimg/reuters.jpg" alt="" /></a>
                           </p>
@@ -196,10 +225,10 @@
                       </div>
     
                         <div class="twoBySix">
-                            <h3><a class="a-text" href="https://www.espn.com" target="_blank">The Weather Channel</a>
+                            <h3><a class="a-text" href="https://www.google.com/search?hl=en&ei=FNSkXJPHDqjv_QbjqbCIAg&q=weather+near+me&oq=weather+near+me" target="_blank">My Local Weather</a>
                             </h3>
                             <p class="list-image">
-                              <a href="https://www.espn.com" target="_blank"><img src="./newsimg/weatherc.png" alt=""></a>
+                              <a href="https://www.google.com/search?hl=en&ei=FNSkXJPHDqjv_QbjqbCIAg&q=weather+near+me&oq=weather+near+me" target="_blank"><img src="./images/weather.png" alt=""></a>
                             </p>
                           </div>
               
@@ -219,14 +248,14 @@
                             </div>
                 
                             <div class="profile-text-block-3 twoBySix">
-                              <h3><a class="a-text" href="https://www.espn.com" target="_blank">ESPN</a></h3>
+                              <h3><a class="a-text pop-up-link pop-up-link" data-position="0 0" href="https://www.espn.com" target="_blank">ESPN</a></h3>
                               <p class="list-image">
-                                  <a href="https://www.espn.com" target="_blank"><img src="./sportsimg/espn.png" alt="" /></a>
+                                  <a href="https://www.espn.com" data-position="200 500" class="b-text pop-up-link" target="_blank"><img src="./sportsimg/espn.png" alt="" /></a>
                               </p>
                             </div>
             </div>
 
-            <script>
+            <!-- <script>
                 function onYouTubeIframeAPIReady() {
                   var videos = [{
                     container: 'div_YouTube',
@@ -272,7 +301,7 @@
                     });
                   });
                 }
-              </script>
+              </script> -->
 
         </div>
         <!--</div>-->
@@ -280,15 +309,21 @@
           <div id="rightside-title" class="curved-header-n">Pro-Tools
           </div>
 
-          <div class="right-side-profileContent">
+          <div class="right-side-profileContent bg-black">
               <div id="itemsOfInterest">
+                  <div id="itemsOfInterest">
+                      <a href="https://www.bankrate.com/mortgage.aspx/?pointsChanged=false&searchChanged=true&mortgageType=Purchase&partnerId=br3&userCreditScore=740&userVeteranStatus=NoMilitaryService&userHadPriorVaLoan=false&userHasVaDisabilities=false&userFirstTimeHomebuyer=false&userQuickClosing=false&userFha=false&userLowUpfrontCosts=false&userLowPayment=false&purchaseZipCode=33774&purchasePrice=198000&purchaseDownPayment=39600&purchasePropertyType=SingleFamily&purchasePropertyUse=PrimaryResidence&purchaseLoanTerms=30yr&purchasePoints=All&refinanceZipCode=33774&refinancePropertyValue=206250&refinanceLoanAmount=165000&refinancePropertyType=SingleFamily&refinancePropertyUse=PrimaryResidence&refinanceCashOutAmount=0&refinancePoints=All&refinanceLoanTerms=30yr" target="_blank"><img src="./finimage/Current-mortgage-interest-rates-new.jpg" alt="" /></a>
+                  </div>
+                  <div id="itemsOfInterest">
+                      <a href="https://www.wsj.com" target="_blank"><img src="./finimage/wsj.png" alt="" /></a>
+                    </div>
+                      <div id="itemsOfInterest">
+                          <a href="https://www.washingtonpost.com/" target="_blank"><img src="./newsimg/wapost.png" alt="" /></a>
+                        </div>
+                        <div id="itemsOfInterest">
+                            <a href="https://www.latimes.com/" target="_blank"><img src="./newsimg//latimes.jpg" alt="" /></a>
+                          </div>
                   <a href="https://www.indeed.com/" target="_blank"><img src="./images2/indeed1.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.ziprecruiter.com/" target="_blank"><img src="./images2/zipR.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.careerbuilder.com" target="_blank"><img src="./images2/careerbuild.png" alt="" /></a>
                 </div>
                 <div id="itemsOfInterest">
                   <a href="https://www.google.com/maps/" target="_blank"><img src="./images2/map1direct.png" alt="" /></a>
@@ -298,9 +333,6 @@
                   </div>
                 <div id="itemsOfInterest">
                   <a href="https://www.apartments.com/" target="_blank"><img src="./images2/aoartments.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://studentaid.ed.gov/sa/fafsa" target="_blank"><img src="./images2/fasfa.png" alt="" /></a>
                 </div>
                 <div id="itemsOfInterest">
                   <a href="https://www.budget.com/en/reservation/make-reservation" target="_blank"><img src="./images2/carrent.jpg" alt="" /></a>
@@ -331,13 +363,13 @@
     
       <div class="videos-container images-bottom-container profile-text-block-3">
           <div class="flex space-around">
-            <!--<img src="images/logo1a11.png" /> alt + shift + arrow top bottom-->
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
-            <img src="images/logo1a11.png" />
-          </div>
+              <!--<img src="images/logo1a11.png" /> alt + shift + arrow top bottom-->
+              <a href="https://www.google.com/search?hl=en&source=hp&ei=L9KkXPz-BYa0ggfmpqDoDQ&q=news&btnK=Google+Search&oq=news&gs_l=psy-ab.3..35i39j0i131i67j0i67l2j0i131j0j0i20i263j0j0i131j0i131i67.4676.5100..5229...1.0..0.154.574.0j5......0....1..gws-wiz.....6.JVB9F8rxMDI" target="_blank"><img src="./images/topstories-300x225.jpg" alt="" /></a>
+              <a href="https://www.si.com/scoreboard" target="_blank"><img src="./images/scores.jpg" alt="" /></a>            
+              <a href="https://theweatherchannel.com" target="_blank"><img src="./newsimg/weatherc.png" alt="" /></a>
+              <a href="https://www.google.com/search?hl=en&ei=GdSkXILbIOm9ggfQnoCoAw&q=traffic+near+me&oq=traffic+near+me&gs_l=psy-ab.3..35i39j0i7i30l9.23091.25026..25828...0.0..0.158.819.2j5......0....1..gws-wiz.......0i71j35i304i39.zP6gv7h_Zy0" target="_blank"><img src="./images/traffic.jpg" alt="" /></a>           
+              <a href="https://www.astrology.com/horoscope/daily.html" target="_blank"><img src="./images/horoscopes.jpg" alt="" /></a>    
+            </div>
         </div>
         <div class="videos-container images-bottom-container profile-text-block-3">
         <div class="accountDel">
@@ -371,7 +403,7 @@
 
             <div class="column4-footer">
                 <form>
-                    <a href="#">Inquire</a>
+                    <a href="#">Inquire<img class="footer-mail" src="images/mail-envelope-icon.png"/></a>
                 </form>
             </div>
         </div>
