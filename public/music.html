@@ -23,7 +23,7 @@
   </script>
 </head>
 
-<body>
+<body class="music-page">
   <div class="body-overlay-profile">
     <div class="body-overlay1">
       <!-- <div class="keywords">keywords here</div> -->
@@ -34,23 +34,24 @@
         <div class="flex flex-center home-logo1">
           <img src="images/logo2a1.png" class="logo1" />
           <!-- <img src="images/Logo2a2.jpg" class="logo2" /> -->
-          <a href="/public/sports.html" id="how-it-works" style="text-decoration:none" class="howitworks"><i
+          <a href="/sports.html" id="how-it-works" style="text-decoration:none" class="howitworks"><i
               class="far fa-eye"></i>
-              Reset - Reload</a>
+            Reset - Reload</a>
+
         </div>
         <nav class="nav-list">
           <ul class="mainNav">
             <!-- <li><a href="index.html" id="join" class="join">Join</a></li> -->
             <li><a href="index.html" style="text-decoration:none" id="login" class="login not-logged-in"><i
                   class="fas fa-handshake"></i>Login|Join</a></li>
-            <li><a href="/public/profilepage.html" class="about" style="text-decoration:none"><i
+            <li><a href="/profilepage.html" class="about" style="text-decoration:none"><i
                   class="fas fa-network-wired"></i>Home</a>
             </li>
             <li><a href="faq.html" class="faq" style="text-decoration:none"><i
                   class="far fa-question-circle"></i>FAQ</a>
             </li>
-            <li><a href="mailto:keng4105@gmail.com" class="contact" class="b-text pop-up-link" target="_blank" style="text-decoration:none"><i
-                  class="fas fa-envelope"></i>Contact</a></li>
+            <li><a href="mailto:keng4105@gmail.com" class="contact" class="b-text pop-up-link" target="_blank"
+                style="text-decoration:none"><i class="fas fa-envelope"></i>Contact</a></li>
             <li class="logged-in"><a href="#" id="logout" style="text-decoration:none"><i
                   class="fas fa-external-link-alt"></i>Logout</a>
             </li>
@@ -74,196 +75,203 @@
       </div>
       <div class="searchBars">
 
-          <div class="searchBar">
-              <form action="https://www.google.com/search" class="searchform searchweb" method="get" name="searchform" target="_blank">
-                <input name="sitesearch" type="hidden" value="">
-                <input class="extra-params" type="hidden" value="">
-                <input autocomplete="on" class="form-control search" name="q" placeholder="Search the web for . . . "
-                  required="required" type="text">
-                <button class="button-search" type="submit">Search</button>
-                <span class="or-separator">or</span>
-                <button class="button-search near-me" type="submit">Search near me</button>
-              </form>
-            </div>
+        <div class="searchBar">
+          <form action="https://www.google.com/search" class="searchform searchweb" method="get" name="searchform"
+            target="_blank">
+            <input name="sitesearch" type="hidden" value="">
+            <input class="extra-params" type="hidden" value="">
+            <input autocomplete="on" class="form-control search" name="q" placeholder="Search the web for . . . "
+              required="required" type="text">
+            <button class="button-search" type="submit">Search</button>
+            <span class="or-separator">or</span>
+            <button class="button-search near-me" type="submit">Search near me</button>
+          </form>
         </div>
+      </div>
 
       <!-- <div class="pro-tools">Pro-Tools</div> -->
       <!-- <div class="services-title"></div> -->
 
-  
-    <!-- Sidebar -->
-    <div class="profile-box">
-      
-      <!-- Profile picture -->
-      <img id="profileAvatar" alt="" />
-      <!-- Input and buttons -->
-      <input style="display: none;" name="image-file" id="image-file" type="file" onchange="grabFile(event)">
-      <button class="changePic">Change</button>
-      <button class="removePic" id="removePic">Remove</button>
-      
-      <div id="picture-text">~ What will you do Today ~</div>
 
-      <div class="calendar-email profile-image-block3 twoBySix auto-height">
-          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"> <img src="/public/images2/gmail.png" class="full-width"> </a>
-          <a href="https://calendar.google.com/calendar/r?tab=rc&pli=1" target="_blank"><img src="/public/images2/calendar.png" class="full-width"></a>
+      <!-- Sidebar -->
+      <div class="profile-box">
+
+        <!-- Profile picture -->
+        <img id="profileAvatar" alt="" />
+        <!-- Input and buttons -->
+        <input style="display: none;" name="image-file" id="image-file" type="file" onchange="grabFile(event)">
+        <button class="changePic">Change</button>
+        <button class="removePic" id="removePic">Remove</button>
+
+        <div id="picture-text">~ What will you do Today ~</div>
+
+        <div class="calendar-email profile-image-block3 twoBySix auto-height">
+          <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"> <img src="/images2/gmail.png"
+              class="full-width"> </a>
+          <a href="https://calendar.google.com/calendar/r?tab=rc&pli=1" target="_blank"><img src="/images2/calendar.png"
+              class="full-width"></a>
+        </div>
       </div>
-    </div>
-      
-      <div class="profile-bodyContainer">
+      <div class="profile-bodyContainer profile-bodyContainer-music">
+
         <!-- <div class="profile-top">You are currently Logged In</div> -->
         <div class="left-side-profileContainer">
-
+          <div id="minimize-window">You can leave this Window Open (minimize) while you work</div>
           <!-- Top navigation / header -->
           <div class="navigation-links curved-header-b">
-              <a href="/public/profilepage.html">Main</a>
-              <a href="/public/shopping.html">My Shopping</a>
-              <a href="/public/news.html">My News/ Weather</a>
-              <a href="/public/sports.html">My Sports</a>
-              <a href="/public/finance.html">My Finance-RE</a>
-              <a href="/public/entertainment.html">My Entertainment</a>
-              <a href="/public/travel.html">My Travel</a>
-            </div>
+            <!-- <a href="/profilepage.html">Main</a>
+              <a href="/shopping.html">My Shopping</a>
+              <a href="/news.html">My News/ Weather</a>
+              <a href="/sports.html">My Sports</a>
+              <a href="/finance.html">My Finance-RE</a>
+              <a href="/entertainment.html">My Entertainment</a>
+              <a href="/travel.html">My Travel</a> -->
+            <div id="music-nav-text"> 14 Different Music Genres are Running - Page Loading Time May Vary</div>
+          </div>
 
 
           <div class="main-grid profile-services-grid-music bg-music list-box-shadow">
-              <script>
-                  function onYouTubeIframeAPIReady() {
+            <script>
+              function onYouTubeIframeAPIReady() {
 
-                    var videos = {
-                      div_YouTube_1: 'WlneLrftoOM',
-                      div_YouTube_2: 'WlneLrftoOM',
-                      div_YouTube_3: 'WlneLrftoOM',
-                      div_YouTube_4: 'WlneLrftoOM',
-                      div_YouTube_5: 'WlneLrftoOM',
-                      div_YouTube_6: 'WlneLrftoOM',
-                      div_YouTube_7: 'WlneLrftoOM',
-                      div_YouTube_8: 'WlneLrftoOM',
-                      div_YouTube_9: 'WlneLrftoOM',
-                      div_YouTube_10:'WlneLrftoOM',
-                      div_YouTube_11: 'WlneLrftoOM',
-                      div_YouTube_12:'WlneLrftoOM',
-                      div_YouTube_13: 'WlneLrftoOM',
-                      div_YouTube_14:'WlneLrftoOM'
-                    };
+                var videos = {
+                  div_YouTube_1: 'WlneLrftoOM',
+                  div_YouTube_2: 'WlneLrftoOM',
+                  div_YouTube_3: 'WlneLrftoOM',
+                  div_YouTube_4: 'WlneLrftoOM',
+                  div_YouTube_5: 'WlneLrftoOM',
+                  div_YouTube_6: 'WlneLrftoOM',
+                  div_YouTube_7: 'WlneLrftoOM',
+                  div_YouTube_8: 'WlneLrftoOM',
+                  div_YouTube_9: 'WlneLrftoOM',
+                  div_YouTube_10: 'WlneLrftoOM',
+                  div_YouTube_11: 'WlneLrftoOM',
+                  div_YouTube_12: 'WlneLrftoOM',
+                  div_YouTube_13: 'WlneLrftoOM',
+                  div_YouTube_14: 'WlneLrftoOM'
+                };
 
-                    for (var video in videos) {
-                      new YT.Player(video, {
-                        videoId: videos[video],
-                        host: 'https://www.youtube.com',
-                        width: 250,
-                        height: 210,
-                        playerVars: {
-                          'autoplay': 0,
-                          'controls': 1,
-                          'showinfo': 0,
-                          'modestbranding': 0,
-                          'loop': 1,
-                          'fs': 0,
-                          'cc_load_policty': 0,
-                          'iv_load_policy': 3
-                        },
-                        events: {
-                          'onReady': function (e) {
-                            // e.target.mute();
-                            e.target.setVolume(10);      // YOU CAN SET VALUE TO 100 FOR MAX VOLUME.
-                          }
-                        }
-                      });
+                for (var video in videos) {
+                  new YT.Player(video, {
+                    videoId: videos[video],
+                    host: 'https://www.youtube.com',
+                    width: 250,
+                    height: 210,
+                    playerVars: {
+                      'autoplay': 0,
+                      'controls': 1,
+                      'showinfo': 0,
+                      'modestbranding': 0,
+                      'loop': 1,
+                      'fs': 0,
+                      'cc_load_policty': 0,
+                      'iv_load_policy': 3
+                    },
+                    events: {
+                      'onReady': function (e) {
+                        // e.target.mute();
+                        e.target.setVolume(10);      // YOU CAN SET VALUE TO 100 FOR MAX VOLUME.
+                      }
                     }
-                  }
-                </script>
-<!-- below is proper format for pop display -->
+                  });
+                }
+              }
+            </script>
+            <!-- below is proper format for pop display -->
             <div class="twoBySix">
-              <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.mlb.com" target="_blank">MLB</a>
+              <h3><a class="b-text pop-up-link pop-up-link" data-position="0 0" href="https://www.mlb.com"
+                  target="_blank">MLB</a>
               </h3>
               <p class="list-image" id="div_YouTube_1">
-               
+
               </p>
             </div>
 
             <div class="profile-text-block-3 twoBySix">
-              <h3><a class="b-text pop-up-link" data-position="200 100" href="https://www.nfl.com" target="_blank">NFL</a></h3>
+              <h3><a class="b-text pop-up-link" data-position="200 100" href="https://www.nfl.com"
+                  target="_blank">NFL</a></h3>
               <p class="list-image" id="div_YouTube_2">
               </p>
             </div>
 
             <div class="twoBySix">
-                <h3><a class="b-text pop-up-link" href="https://www.nhl.com" class="" target="_blank">NHL</a>
-                </h3>
-                <p class="list-image" id="div_YouTube_3">
-                </p>
-              </div>
-  
-              <div class="profile-text-block-3 twoBySix">
-                <h3><a href="https://www.nba.com" class="b-text pop-up-link" target="_blank">NBA</a></h3>
-                <p class="list-image" id="div_YouTube_4">
-                  </p>
-              </div>
+              <h3><a class="b-text pop-up-link" href="https://www.nhl.com" class="" target="_blank">NHL</a>
+              </h3>
+              <p class="list-image" id="div_YouTube_3">
+              </p>
+            </div>
 
-              <div class="twoBySix">
-                  <h3><a href="www.pga.com" class="b-text pop-up-link" target="_blank">PGA</a>
-                  </h3>
-                  <p class="list-image" id="div_YouTube_5">
-                    </p>
-                </div>
-    
-                <div class="profile-text-block-3 twoBySix">
-                  <h3><a href="https://www.soccer24.com" class="b-text pop-up-link" target="_blank">World Soccer</a></h3>
-                  <p class="list-image" id="div_YouTube_6">
-                    </p>
-                </div>
+            <div class="profile-text-block-3 twoBySix">
+              <h3><a href="https://www.nba.com" class="b-text pop-up-link" target="_blank">NBA</a></h3>
+              <p class="list-image" id="div_YouTube_4">
+              </p>
+            </div>
 
-                <div class="twoBySix">
-                    <h3><a href="https://www.nascar.com" class="b-text pop-up-link" target="_blank">Nascar</a>
-                    </h3>
-                    <p class="list-image" id="div_YouTube_7">
-                      </p>
-                  </div>
-      
-                  <div class="profile-text-block-3 twoBySix">
-                      <h3><a href="https://www.wtatennis.com" class="b-text pop-up-link" target="_blank">Tennis</a></h3>
-                      <p class="list-image" id="div_YouTube_8">
-                        </p>
-                    </div>
+            <div class="twoBySix">
+              <h3><a href="www.pga.com" class="b-text pop-up-link" target="_blank">PGA</a>
+              </h3>
+              <p class="list-image" id="div_YouTube_5">
+              </p>
+            </div>
 
-                    <div class="twoBySix">
-                        <h3><a href="https://www.nascar.com" class="b-text pop-up-link" target="_blank">UFC</a>
-                        </h3>
-                        <p class="list-image" id="div_YouTube_9">
-                          </p>
-                      </div>
+            <div class="profile-text-block-3 twoBySix">
+              <h3><a href="https://www.soccer24.com" class="b-text pop-up-link" target="_blank">World Soccer</a></h3>
+              <p class="list-image" id="div_YouTube_6">
+              </p>
+            </div>
 
-                  <div class="profile-text-block-3 twoBySix">
-                    <h3><a href="https://https://www.foxsports.com/boxing" class="b-text pop-up-link" target="_blank">Boxing</a></h3>
-                    <p class="list-image" id="div_YouTube_10">
-                      </p>
-                  </div>
+            <div class="twoBySix">
+              <h3><a href="https://www.nascar.com" class="b-text pop-up-link" target="_blank">Nascar</a>
+              </h3>
+              <p class="list-image" id="div_YouTube_7">
+              </p>
+            </div>
 
-                    <div class="twoBySix">
-                        <h3><a href="https://www.espn.com" class="b-text pop-up-link" target="_blank">NCAAF</a>
-                        </h3>
-                        <p class="list-image" id="div_YouTube_11">
-                          </p>
-                      </div>
-          
-                      <div class="profile-text-block-3 twoBySix">
-                        <h3><a href="https://www.ncaa.com" class="b-text pop-up-link" target="_blank">NCAAB</a></h3>
-                        <p class="list-image" id="div_YouTube_12">
-                          </p>
-                      </div>
+            <div class="profile-text-block-3 twoBySix">
+              <h3><a href="https://www.wtatennis.com" class="b-text pop-up-link" target="_blank">Tennis</a></h3>
+              <p class="list-image" id="div_YouTube_8">
+              </p>
+            </div>
 
-                      <div class="twoBySix">
-                          <h3><a href="https://www.si.com" class="b-text pop-up-link" target="_blank">Sports Illustrated</a>
-                          </h3>
-                          <p class="list-image" id="div_YouTube_13">
-                            </p>
-                        </div>
-            
-                        <div class="profile-text-block-3 twoBySix">
-                          <h3><a href="https://www.espn.com" class="b-text pop-up-link" target="_blank">ESPN</a></h3>
-                          <p class="list-image" id="div_YouTube_14">
-                            </p>
-                        </div>
+            <div class="twoBySix">
+              <h3><a href="https://www.nascar.com" class="b-text pop-up-link" target="_blank">UFC</a>
+              </h3>
+              <p class="list-image" id="div_YouTube_9">
+              </p>
+            </div>
+
+            <div class="profile-text-block-3 twoBySix">
+              <h3><a href="https://https://www.foxsports.com/boxing" class="b-text pop-up-link"
+                  target="_blank">Boxing</a></h3>
+              <p class="list-image" id="div_YouTube_10">
+              </p>
+            </div>
+
+            <div class="twoBySix">
+              <h3><a href="https://www.espn.com" class="b-text pop-up-link" target="_blank">NCAAF</a>
+              </h3>
+              <p class="list-image" id="div_YouTube_11">
+              </p>
+            </div>
+
+            <div class="profile-text-block-3 twoBySix">
+              <h3><a href="https://www.ncaa.com" class="b-text pop-up-link" target="_blank">NCAAB</a></h3>
+              <p class="list-image" id="div_YouTube_12">
+              </p>
+            </div>
+
+            <div class="twoBySix">
+              <h3><a href="https://www.si.com" class="b-text pop-up-link" target="_blank">Sports Illustrated</a>
+              </h3>
+              <p class="list-image" id="div_YouTube_13">
+              </p>
+            </div>
+
+            <div class="profile-text-block-3 twoBySix">
+              <h3><a href="https://www.espn.com" class="b-text pop-up-link" target="_blank">ESPN</a></h3>
+              <p class="list-image" id="div_YouTube_14">
+              </p>
+            </div>
 
           </div>
         </div>
@@ -273,55 +281,57 @@
           </div>
 
           <div class="right-side-profileContent">
-              <div id="itemsOfInterest">
-                  <a href="https://www.indeed.com/" target="_blank"><img src="./images2/indeed1.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.ziprecruiter.com/" target="_blank"><img src="./images2/zipR.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.careerbuilder.com" target="_blank"><img src="./images2/careerbuild.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.google.com/maps/" target="_blank"><img src="./images2/map1direct.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                    <a href="https://www.realtor.com/" target="_blank"><img src="./images2/realtorcom.png" alt="" /></a>
-                  </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.apartments.com/" target="_blank"><img src="./images2/aoartments.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://studentaid.ed.gov/sa/fafsa" target="_blank"><img src="./images2/fasfa.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.budget.com/en/reservation/make-reservation" target="_blank"><img src="./images2/carrent.jpg" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.hotels.com" target="_blank"><img src="./images2/hotels1.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.google.com/search?q=restaurants+near+me&oq=restaurants+near+me&aqs=chrome..69i57.3408j0j4&sourceid=chrome&ie=UTF-8" target="_blank"><img src="./images2/restaurants.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                  <a href="https://www.priceline.com/" target="_blank"><img src="./images2/priceline.png" alt="" /></a>
-                </div>
-                <div id="itemsOfInterest">
-                    <a href="https://www.hrblock.com/" target="_blank"><img src="./images2/hrblock.png" alt="" /></a>
-                  </div>
-                <div id="itemsOfInterest">
-                    <a href="https://www.doordash.com/" target="_blank"><img src="./images2/doordash.png" alt="" /></a>
-                  </div>
-                <div id="itemsOfInterest">
-                    <a href="https://www.cars.com/" target="_blank"><img src="./images2/carscom.png" alt="" /></a>
-                  </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.indeed.com/" target="_blank"><img src="./images2/indeed1.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.ziprecruiter.com/" target="_blank"><img src="./images2/zipR.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.careerbuilder.com" target="_blank"><img src="./images2/careerbuild.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.google.com/maps/" target="_blank"><img src="./images2/map1direct.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.realtor.com/" target="_blank"><img src="./images2/realtorcom.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.apartments.com/" target="_blank"><img src="./images2/aoartments.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://studentaid.ed.gov/sa/fafsa" target="_blank"><img src="./images2/fasfa.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.budget.com/en/reservation/make-reservation" target="_blank"><img
+                  src="./images2/carrent.jpg" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.hotels.com" target="_blank"><img src="./images2/hotels1.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.google.com/search?q=restaurants+near+me&oq=restaurants+near+me&aqs=chrome..69i57.3408j0j4&sourceid=chrome&ie=UTF-8"
+                target="_blank"><img src="./images2/restaurants.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.priceline.com/" target="_blank"><img src="./images2/priceline.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.hrblock.com/" target="_blank"><img src="./images2/hrblock.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.doordash.com/" target="_blank"><img src="./images2/doordash.png" alt="" /></a>
+            </div>
+            <div id="itemsOfInterest">
+              <a href="https://www.cars.com/" target="_blank"><img src="./images2/carscom.png" alt="" /></a>
+            </div>
             <!-- <div></div> -->
 
           </div>
         </div>
       </div>
 
-    <!--<div id="videos-bottom" class="videos-container profile-text-block3">
+      <!--<div id="videos-bottom" class="videos-container profile-text-block3">
       <h3>My Music</h3>
       <div class="videos">
         <div id="div_YouTube"></div>
@@ -332,88 +342,92 @@
         <button class="deleteAccount" id="deleteMyAccount">Delete my account</button>
       </div>
     </div>-->
-    
-    <div class="videos-container images-bottom-container profile-text-block-3">
+
+      <div class="videos-container images-bottom-container profile-text-block-3">
         <div class="flex space-around">
-            <!--<img src="images/logo1a11.png" /> alt + shift + arrow top bottom-->
-            <a href="https://www.google.com/search?hl=en&source=hp&ei=L9KkXPz-BYa0ggfmpqDoDQ&q=news&btnK=Google+Search&oq=news&gs_l=psy-ab.3..35i39j0i131i67j0i67l2j0i131j0j0i20i263j0j0i131j0i131i67.4676.5100..5229...1.0..0.154.574.0j5......0....1..gws-wiz.....6.JVB9F8rxMDI" target="_blank"><img src="./images/topstories-300x225.jpg" alt="" /></a>
-            <a href="https://www.si.com/scoreboard" target="_blank"><img src="./images/scores.jpg" alt="" /></a>            
-            <a href="https://https://www.google.com/search?hl=en&ei=FNSkXJPHDqjv_QbjqbCIAg&q=weather+near+me&oq=weather+near+me&gs_l=psy-ab.3..35i39l2j0l8.3068.3980..4301...0.0..0.312.1243.2j0j3j1......0....1..gws-wiz.......0i71.66EzYxx_NzM" target="_blank"><img src="./images/weather.png" alt="" /></a>
-            <a href="https://www.google.com/search?hl=en&ei=GdSkXILbIOm9ggfQnoCoAw&q=traffic+near+me&oq=traffic+near+me&gs_l=psy-ab.3..35i39j0i7i30l9.23091.25026..25828...0.0..0.158.819.2j5......0....1..gws-wiz.......0i71j35i304i39.zP6gv7h_Zy0" target="_blank"><img src="./images/traffic.jpg" alt="" /></a>           
-            <a href="https://www.astrology.com/horoscope/daily.html" target="_blank"><img src="./images/horoscopes.jpg" alt="" /></a>          
-          </div>
+          <!--<img src="images/logo1a11.png" /> alt + shift + arrow top bottom-->
+          <a href="https://www.google.com/search?hl=en&source=hp&ei=L9KkXPz-BYa0ggfmpqDoDQ&q=news&btnK=Google+Search&oq=news&gs_l=psy-ab.3..35i39j0i131i67j0i67l2j0i131j0j0i20i263j0j0i131j0i131i67.4676.5100..5229...1.0..0.154.574.0j5......0....1..gws-wiz.....6.JVB9F8rxMDI"
+            target="_blank"><img src="./images/topstories-300x225.jpg" alt="" /></a>
+          <a href="https://www.si.com/scoreboard" target="_blank"><img src="./images/scores.jpg" alt="" /></a>
+          <a href="https://https://www.google.com/search?hl=en&ei=FNSkXJPHDqjv_QbjqbCIAg&q=weather+near+me&oq=weather+near+me&gs_l=psy-ab.3..35i39l2j0l8.3068.3980..4301...0.0..0.312.1243.2j0j3j1......0....1..gws-wiz.......0i71.66EzYxx_NzM"
+            target="_blank"><img src="./images/weather.png" alt="" /></a>
+          <a href="https://www.google.com/search?hl=en&ei=GdSkXILbIOm9ggfQnoCoAw&q=traffic+near+me&oq=traffic+near+me&gs_l=psy-ab.3..35i39j0i7i30l9.23091.25026..25828...0.0..0.158.819.2j5......0....1..gws-wiz.......0i71j35i304i39.zP6gv7h_Zy0"
+            target="_blank"><img src="./images/traffic.jpg" alt="" /></a>
+          <a href="https://www.astrology.com/horoscope/daily.html" target="_blank"><img src="./images/horoscopes.jpg"
+              alt="" /></a>
+        </div>
       </div>
       <div class="videos-container images-bottom-container profile-text-block-3">
-      <div class="accountDel">
-        <button class="deleteAccount" id="deleteMyAccount">Delete my account</button>
+        <div class="accountDel">
+          <button class="deleteAccount" id="deleteMyAccount">Delete my account</button>
+        </div>
       </div>
-      </div>
 
-    <!--CLosing Page Body Container-->
+      <!--CLosing Page Body Container-->
 
-    <footer class="site-footer">
+      <footer class="site-footer">
 
-            <div class="footer-grid">
+        <div class="footer-grid">
 
-                <div class="column-footer-logo">
-                    <div>
-                        <img src="images/logo1a11.png" />
-                    </div>
-                    Getting You Connected
-                </div>
-                
-                <div class="column2-footer">
-                    <a href="#">Sign Up</a>
-                    <a href="#">Login</a>
-                    <a href="#">later</a>
-                </div>
-                <div class="column3-footer">
-                    <a href="#">Help</a>
-                    <a href="#">Terms</a>
-                </div>
-
-
-                <div class="column4-footer">
-                    <form>
-                        <a href="#">Inquire<img class="footer-mail" src="images/mail-envelope-icon.png"/></a>
-                    </form>
-                </div>
+          <div class="column-footer-logo">
+            <div>
+              <img src="images/logo1a11.png" />
             </div>
+            Getting You Connected
+          </div>
 
-            <div class="footer-bottom">
-                <div class="footer-bottom-links">
-                    <a href="#">Help</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Business</a>
-                    <a href="#">Marketing</a>
-                    <a href="#">Developers</a>
-                    <a href="#">Privacy</a>
-                </div>
-                <div class="footer-bottom-social">
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-pinterest"></i>
-                    </a>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-youtube-square"></i>
-                    </a>
-                </div>
-            </div>
+          <div class="column2-footer">
+            <a href="#">Sign Up</a>
+            <a href="#">Login</a>
+            <a href="#">later</a>
+          </div>
+          <div class="column3-footer">
+            <a href="#">Help</a>
+            <a href="#">Terms</a>
+          </div>
 
-            <div class="footer-copyright">
-                © 2019 Project.com. All rights reserved.
-            </div>
 
-        </footer>
+          <div class="column4-footer">
+            <form>
+              <a href="#">Inquire<img class="footer-mail" src="images/mail-envelope-icon.png" /></a>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-bottom-links">
+            <a href="#">Help</a>
+            <a href="#">Terms</a>
+            <a href="#">Business</a>
+            <a href="#">Marketing</a>
+            <a href="#">Developers</a>
+            <a href="#">Privacy</a>
+          </div>
+          <div class="footer-bottom-social">
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-pinterest"></i>
+            </a>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          © 2019 Project.com. All rights reserved.
+        </div>
+
+      </footer>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>

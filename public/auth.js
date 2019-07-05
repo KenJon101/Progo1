@@ -88,18 +88,21 @@ async function signIn() {
 
   try {
     let result = await firebase.auth().signInWithPopup(provider);
-    let id = result.additionalUserInfo.profile.id;
+    let { id } = result.additionalUserInfo.profile;
 
     console.log('Login result: ', result);
+    
     // store user
     localStorage.setItem("uid", id);
 
     let doc = await firebase.firestore().collection('users').doc(id).get();
     let userInFB = doc.data();
 
+    return console.log(userInFB);
+
     if (userInFB) {
       // already in firebase
-      window.location.href = '/public/profilepage.html';
+      window.location.href = '/profilepage.html';
     } else {
       // create user in firebase
       let { picture, email, given_name, family_name } = result.additionalUserInfo.profile;
@@ -114,7 +117,6 @@ async function signIn() {
         neededSkills: [],
         recommendedUsers: []
       };
-
 
       await Promise.all([
         firebase.firestore().collection('users').doc(id).set(publicUserData)
@@ -137,9 +139,7 @@ async function signIn() {
       //   }).catch(console.error);
       // });
 
-
       window.location.href = '/signupModal.html';
-
     }
 
   } catch (error) {
@@ -187,7 +187,8 @@ $(document).ready(() => {
 
   $('#homeLogin, #login, .start-button').on('click', async (e) => {
     e.preventDefault();
-    const authResult = await signIn();
+    await signIn();
+    return false;
   });
 });
 
@@ -217,7 +218,6 @@ if (noAgreeButton) {
     deleteMyAccount();
   });
 }
-
 
 
 let deleteMyAccountButton = document.getElementById("deleteMyAccount");
@@ -272,31 +272,23 @@ function logoutUserAndRemoveStoredData() {
   localStorage.removeItem('verified');
   firebase.auth().signOut();
   setTimeout(function () {
-    window.location.href = '/public/index.html';
+    window.location.href = '/index.html';
   }, 10);
 }
 async function deleteMyAccount() {
   await Promise.all([
     getPublicUserDoc().delete()
   ]);
-  
+
   logoutUserAndRemoveStoredData();
 }
 
 
-
 function enableLoginLogoutButton() {
   firebase.auth().onAuthStateChanged(function (user) {
-    if (user) {
-      // is logged
-      $('#login').hide();
-      $('#logout').show();
-    } else {
-      // No user is signed in.
-      $('#login').show();
-      $('#logout').hide();
-    }
+    $('#login, .not-logged-in').toggle(!user);
+    $('#logout, .logged-in').toggle(!!user);
   });
 }
-            
+
 enableLoginLogoutButton();

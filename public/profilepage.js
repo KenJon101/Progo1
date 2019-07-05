@@ -399,14 +399,18 @@ $(document).ready(async () => {
 });
 
 
-$(window).on('scroll', function () {
+$(window).on('scroll', scrolled)
+
+function scrolled () {
     var $elem = $('.profile-box');
     var elemHeight = $elem.height() + 80;
     var offset = 300 // $elem.offset().top;
-    var $body = $('.profile-bodyContainer');
-    var bodyBottom = $body.height() + $body.offset().top;
+    var $body = $('.profile-bodyContainer:visible');
+    var bodyBottom = $body.height() + 270 //+ $body.offset().top;    
     var limit = bodyBottom - (elemHeight + offset);
     var scroll = window.scrollY;
+
+    console.log(limit)
 
     if (scroll > limit) {
         $elem.css({
@@ -419,5 +423,6 @@ $(window).on('scroll', function () {
             top: 'initial'
         })
     }
+}
 
-})
+scrolled();

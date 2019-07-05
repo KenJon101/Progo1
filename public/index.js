@@ -210,17 +210,19 @@ $(function () {
   }
   
   // Opens curtains
-$('.learn-more').on('click', function (event) {
+$('.learn-more').on('click', openCurtains);
+
+function openCurtains () {
   // Add class to open the curtain with CSS
   //$('.curtain footer').fadeOut(function () {
-    //});
-    $('body').addClass('loaded');
-  
-    // Removes the curtain after 1 second
+  //});
+  $('body').addClass('loaded');
+
+  // Removes the curtain after 1 second
   setTimeout(function () {
-      $('.curtain').remove();
-    }, 1000);
-});
+    $('.curtain').remove();
+  }, 1000);
+}
 
 function checkLogIn () {
   console.log('checking log in');
@@ -228,12 +230,6 @@ function checkLogIn () {
 
 function isLoggedIn() {
   return Boolean(localStorage.getItem('uid'));
-}
-
-if(isLoggedIn()) {
-  $('.not-logged-in').hide();
-} else {
-  $('.logged-in').hide()
 }
 
 /*checkLogIn().then(function(user) {
@@ -263,3 +259,69 @@ function createMobileMenu() {
 }
 
 createMobileMenu();
+
+$('.navigation-links a').on('click', function(event) {
+  const href = $(this).attr('href').match(/profilepage.html#(.*)/);
+  console.log(href)
+  if(href) {
+    console.log(href)
+    navigationClicked(href[1], event);
+  }
+});
+
+function navigationClicked(href, event) {
+  const $container = $('.profile-bodyContainer-' + href);
+  
+  if(!$container.length) return;
+
+  $('.profile-bodyContainer').hide();
+  $container.css('display', 'flex');
+  event && event.preventDefault();
+
+  if (href === 'profile') {
+    $('.calendar-email').hide();
+    $('#skills-form-container').show();
+  } else {
+    $('.calendar-email').show();
+    $('#skills-form-container').hide();
+  }
+
+  // Changes bottom container background
+  $('.images-bottom-container .flex').css('background', $container.find('.main-grid').css('background'));
+}
+
+const { hash } = window.location;
+
+if(hash) {
+  navigationClicked(hash.replace('#', ''));
+}
+
+$('a.home').on('click', function(event) {
+  event.preventDefault();
+  var notLoggedInMessage = 'You are not logged in!';
+
+  if(!isLoggedIn()) {
+    return alert(notLoggedInMessage);
+  }
+
+  // Logged in user. Go to profilepage.
+  window.location = 'profilepage.html';
+});
+
+$('a:not(".login")').on('click', function(event) {
+  var link = $(this).attr('href');
+
+  if(link.match('index')) {
+    event.preventDefault();
+    window.location = link + '?visited=true';
+  }
+});
+
+// Index auto-open
+function autoOpen() {
+  if(isLoggedIn() || window.location.search.match('visited=true')) {
+    openCurtains();
+  }
+}
+
+autoOpen();

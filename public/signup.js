@@ -4,6 +4,12 @@
     //YOU WILL NEED TO VALIDATE PHONE NUMBERS HERE
     var phoneNumber = $('#phoneNumber').val();
 
+    // Adds default area code (+1) and updates input
+    if(!phoneNumber.includes('+')) {
+      phoneNumber = '+1' + phoneNumber;
+      $('#phoneNumber').val(phoneNumber);
+    }
+
     firebase.auth().signInWithPhoneNumber(phoneNumber, window.recaptchaVerifier)
       .then(async function (confirmationResult) {
 

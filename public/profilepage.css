@@ -29,7 +29,7 @@
 .searchBars {
   /* width: 37%; */
   position: fixed;
-  top: 54px;
+  top: 58px;
   /*left: 400px;*/
   left: 50%;
   /*margin-left: -365px;*/
@@ -37,6 +37,7 @@
   border-radius: 4px;
   padding: 5px;
   left: calc(160px + (68% - 530px) / 2);
+  z-index: 100;
 }
 
 @media (max-width: 1024px) {
@@ -343,6 +344,7 @@ p.list-image a {
   margin-left: 100px;
   margin-right: 42px;
   box-shadow: 1px 5px 20px 0px rgb(97, 97, 97);
+  border-radius: 10px 10px 0 0;
 }
 
 .twoBySix:nth-of-type(1) {
@@ -495,7 +497,7 @@ img {
   /* grid-gap: 100px; */
 }
 
-.profile-bodyContainer {
+.profile-bodyContainer-profile {
   display: flex;
   justify-content: space-between;
   padding: 0 0px;
@@ -503,6 +505,53 @@ img {
   margin-top: 150px;
 }
 
+.profile-bodyContainer-shopping{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0px;
+  grid-column-gap: 0px;
+  margin-top: 150px;
+}
+
+.profile-bodyContainer-news{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0px;
+  grid-column-gap: 0px;
+  margin-top: 150px;
+}
+
+.profile-bodyContainer-finance{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0px;
+  grid-column-gap: 0px;
+  margin-top: 150px;
+}
+
+.profile-bodyContainer-sports {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0px;
+  grid-column-gap: 0px;
+  margin-top: 150px;
+}
+
+.profile-bodyContainer-travel{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0px;
+  grid-column-gap: 0px;
+  margin-top: 150px;
+}
+
+.profile-bodyContainer-entertainment{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0px;
+  grid-column-gap: 0px;
+  margin-top: 150px;
+}
 /*
 
 .left-side-profileContainer {
@@ -835,6 +884,7 @@ img {
 .list-image {
   /*padding-left: 15%;*/
   /* height: 250px; */
+  margin-bottom:60px;
 }
 
 .profile-picture {
@@ -864,4 +914,21 @@ img {
   width: 100px;
   display: inline-block;
   text-align: left;
+}
+
+.profile-bodyContainer {
+  display: none;
+}
+.profile-bodyContainer-profile,
+.profile-bodyContainer-music {
+  display: flex;
+}
+
+.profile-bodyContainer-music {
+ /* display: block;*/
+ display: flex;
+ justify-content: space-between;
+ padding: 0 0px;
+ grid-column-gap: 0px;
+ margin-top: 150px;
 }

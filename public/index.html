@@ -68,7 +68,7 @@
               <h1>Text TEst</h1>
             </div> -->
                 <!-- <video autoplay loop muted> -->
-                <video loop muted>
+                <video loop autoplay muted>
                     <source src="./videos/mainmov.mov" type="video/mp4">
                 </video>
             </section>
@@ -149,7 +149,7 @@
                         </div>
                         <div class="text-block">
                             <h3>Cost</h3>
-                            <p>Progocity.com is currently in Beta status in the United States.  As a result, there are no costs to you at this time an dyou are free to use our platform and services that are currently available.  For best results, we recommend trying out Progocity.com correctly by setting it as your home page as it is powered by Google. This will make all of your internet activty run more effciiently.  
+                            <p>Progocity.com is currently in Beta status in the United States.  As a result, there are no costs to you at this time and you are free to use our platform and services that are currently available.  For best results, we recommend trying out Progocity.com correctly by setting it as your home page as it is powered by Google. This will make all of your internet activty run more effciiently.  
                             </p>
                         </div>
                     </div>
@@ -267,8 +267,8 @@
                     <li>Career Event Organizing - Set Up meetings with others in your group to discuss Strategies to Advance in Your Industry. </li>
                     <li>Resume Building and Editing</li>
                     <li>Easier Access to News, Sports, Weather, Shopping and Travel Services</li>
-                    <li>Real Estate and Financial News: 1-CLick Connection</li>
-                    <li>Faster Connctiviy with Ebay, Amaon, Craigslist & More</li>
+                    <li>Real Estate and Financial News: Fast and Real Time</li>
+                    <li>Faster Connctiviy with Ebay, Amazon, Craigslist & More</li>
 
                 </ul>
             </div>
@@ -282,17 +282,17 @@
                 <div class="missionDesc">
                     <div class=missionDesc-title-1>Why we do it
                     </div>
-                    <div class="missionDesc1">2017-2018 Surveys conducted by the USBLS, Forbes and Business Insider, revealed that personal and professional references were teh LArgest factor in a company's final decision to hire an applicant.
+                    <div class="missionDesc1">2017-2018 Surveys conducted by the USBLS, Forbes and Business Insider, revealed that personal and professional references were the Largest factor in a company's final decision to hire an applicant.
                     </div>
                     <div class="missionDesc2">But in a world where workers are increasingly mobile and relocating due to educational and technical job training, it has become increasingly difficult for newer applicants to build reliable and dependable long-term references.</div>
                     <div class="missionDesc-title-2">Social Networking For Professional Growth</div>
                     <div class="missionDesc2">
                         No more wasting time making connections in a new area with people who aren't serious about building a network of positive contacts for professional growth.
-                        We are focused on helping each other to connect with a good job and to grow, personally and professionally.
+                        We are focused on helping each other to connect to find a good job and to grow, personally and professionally.
                     </div>
                     <div class=missionDesc-title-3>Relocation References</div>
                     <div class="missionDesc2">Moving around and relocating due to changes in your job or career can make it difficult to maintain solid rental references.  You are not alone in dealing with this issue, as millions of americans report this problem during relocation.
-                    Progocity.com allows you to make connections with other members like yourself who want to help by getting to know you quickly so that you can build mutually beneficial references to solve this problem.   
+                    Progocity.com allows you to make connections with other members like yourself who want to help by getting to know you quickly so that you can build mutually beneficial rental and relocation references to solve this problem.   
                     </div>
                 </div>
             </div>
@@ -416,6 +416,7 @@
                 <div class="curtain__panel curtain__panel--left">
                     <div class="left-panel-text">
                         <img src="images/logo1a11.png" class="logo3" />
+                        <img src="images/power-google.png" class="logo3a" />
                         <div id="login-curtain">
                             <!-- <form action="about"> -->
                                 <!-- <label id="login-email-label">
@@ -476,7 +477,9 @@
 
                 <div class="column4-footer">
                     <form>
-                        <a href="#">Inquire<img class="footer-mail" src="images/mail-envelope-icon.png"/></a>
+                        <a href="mailto:keng4105@gmail.com">Inquire<img class="footer-mail" src="images/mail-envelope-icon.png"/></a>
+
+                        
                     </form>
                 </div>
             </div>
@@ -533,13 +536,15 @@
 
     <script>
 
-        const userObj = await getUser();
-        const isLoggedIn = userObj && userObj.verified === 1;
-
-        if(isLoggedIn) {
-            window.location = '/public/profilepage.html';
-        }
-        
+        /*(async function() {
+            const userObj = await getUser();
+            const isLoggedIn = userObj && userObj.verified === 1;
+            
+            if(isLoggedIn) {
+                window.location = '/profilepage.html';
+            }
+        })();*/
+            
     </script>
 
 </body>
