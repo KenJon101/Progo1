@@ -82,7 +82,7 @@
         localStorage.setItem('verified', 'true');
 
         
-        window.location.href = '/profilepage.html';
+        window.location.href = 'profilepage.html';
       }
       catch (err) {
         alert('Server error');
@@ -109,7 +109,7 @@
     let userObj = await getUser();
     if (userObj) {
       if (userObj.agreed == 1) {
-        window.location.href = '/profilepage.html';
+        window.location.href = 'profilepage.html';
       }
       else {
         $('#profile-modal').show();

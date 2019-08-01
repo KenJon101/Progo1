@@ -98,11 +98,11 @@ async function signIn() {
     let doc = await firebase.firestore().collection('users').doc(id).get();
     let userInFB = doc.data();
 
-    return console.log(userInFB);
+    //return console.log(userInFB);
 
     if (userInFB) {
       // already in firebase
-      window.location.href = '/profilepage.html';
+      //window.location.href = 'profilepage.html';
     } else {
       // create user in firebase
       let { picture, email, given_name, family_name } = result.additionalUserInfo.profile;
@@ -138,10 +138,10 @@ async function signIn() {
       //       //window.location.href = 'profilepage.html';
       //   }).catch(console.error);
       // });
-
-      window.location.href = '/signupModal.html';
+      console.log("Signup Modal");
+      
     }
-
+    window.location.href = 'signupModal.html';
   } catch (error) {
     console.log(error)
 
@@ -272,7 +272,7 @@ function logoutUserAndRemoveStoredData() {
   localStorage.removeItem('verified');
   firebase.auth().signOut();
   setTimeout(function () {
-    window.location.href = '/index.html';
+    window.location.href = 'index.html';
   }, 10);
 }
 async function deleteMyAccount() {
